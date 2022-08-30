@@ -3,11 +3,11 @@ import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import TeamItem from "../ui/TeamItem";
 import { communityContent } from "../contents/Contents";
-import CommunitiesBackground from "../assets/CommunitiesBackground.png";
+import CommunitiesBackground from "../assets/CommunitiesBackground.jpeg";
 
 const CommunityContainer = styled.div`
   width: 100%;
-  height: 92vh;
+  min-height: 92vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,6 +17,11 @@ const CommunityContainer = styled.div`
     rgba(104, 109, 118, 1) 0%,
     rgba(0, 0, 0, 1) 100%
   );
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+  }
 `;
 
 const CommunityBackground = styled.div`
@@ -29,6 +34,10 @@ const CommunityBackground = styled.div`
   overflow: hidden;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("${(props) => props.src && props.src}");
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Community = () => {

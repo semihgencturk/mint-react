@@ -20,10 +20,18 @@ const EventsContainer = styled.div`
 
 const EventHeader = styled.div`
   font-size: 50px;
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
 `;
 
 const EventOptions = styled.div`
   display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
 `;
 
 const EventOption = styled.button`
@@ -39,9 +47,6 @@ const EventOption = styled.button`
     box-shadow: 0 0 0 -3px white;
   }
 
-  // background-color: ${(props) => (props.active ? "black" : "transparent")};
-  // border-color: ${(props) => (props.active ? "white" : "black")};
-  // color: ${(props) => (props.active ? "white" : "black")};
   transform: ${(props) =>
     props.active ? "translateY(0);" : "translateY(10px);"};
 `;
@@ -57,6 +62,10 @@ const EventImages1 = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5vh;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 const EventImages2 = styled.div`
@@ -65,6 +74,10 @@ const EventImages2 = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5vh;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 const Events = () => {

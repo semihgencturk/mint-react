@@ -38,6 +38,11 @@ const LinkButtonsContainer = styled.div`
   gap: 2%;
   width: 100%;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const ReachUs = ({

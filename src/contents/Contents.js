@@ -13,12 +13,13 @@ import BundleBackground from "../assets/BundleBackground.jpg";
 import KodluyoruzLogo from "../assets/KodluyoruzLogo.png";
 import JuniorProjectInfo from "../assets/JuniorProjectInfo.png";
 import AiLogo from "../assets/AiLogo.jpeg";
-import BilimSenligiLogo from "../assets/mintSponsorships/BilimSenligiLogo.png";
-import KampusEtkinlikleriLogo from "../assets/mintSponsorships/KampusEtkinlikleriLogo.png";
-import UniverlistLogo from "../assets/mintSponsorships/UniverlistLogo.svg";
-import WebteknoLogo from "../assets/mintSponsorships/WebteknoLogo.png";
-import AjansKurduLogo from "../assets/mintSponsorships/AjansKurduLogo.webp";
-import IsKulubuLogo from "../assets/mintSponsorships/IsKulubuLogo.png";
+import BilimSenligiLogo from "../assets/BilimSenligiLogo.png";
+import KampusEtkinlikleriLogo from "../assets/KampusEtkinlikleriLogo.png";
+import UniverlistLogo from "../assets/UniverlistLogo.svg";
+import WebteknoLogo from "../assets/WebteknoLogo.png";
+import AjansKurduLogo from "../assets/AjansKurduLogo.webp";
+import IsKulubuLogo from "../assets/IsKulubuLogo.png";
+import AstridGreenLogo from "../assets/AstridGreenLogo.png";
 
 export const homeContent = {
   bundle: {
@@ -100,7 +101,7 @@ export const homeContent = {
       },
       {
         name: "Ergin Can Muaf - Eğitim Birimi Koordinatörü",
-        href: "https://github.com/",
+        href: "https://www.linkedin.com/mwlite/in/ergincan-mutaf-69384a220",
       },
       {
         name: "Eren Şükrü Kür - Eğitim Birimi Koordinatörü",
@@ -142,18 +143,47 @@ export const homeContent = {
   },
 
   sponsorships: [
-    { src: `${YtuLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${KodluyoruzLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${BilimSenligiLogo}`, alt: "Bilim-Senligi-Logo" },
-    { src: `${KampusEtkinlikleriLogo}`, alt: "Kampus-Etkinlikleri-Logo" },
-    { src: `${UniverlistLogo}`, alt: "Univerlist-Logo" },
-    { src: `${WebteknoLogo}`, alt: "Webtekno-Logo", linkTo: "IsKulubuLogo" },
+    {
+      src: `${YtuLogo}`,
+      alt: "Yildiz-Teknik-Universitesi-Logo",
+      linkTo: "https://yildiz.edu.tr/",
+    },
+    {
+      src: `${KodluyoruzLogo}`,
+      alt: "Kodluyoruz-Logo",
+      linkTo: "https://www.kodluyoruz.org/",
+    },
+    {
+      src: `${WebteknoLogo}`,
+      alt: "Webtekno-Logo",
+      linkTo: "https://www.webtekno.com/",
+    },
+    {
+      src: `${BilimSenligiLogo}`,
+      alt: "Bilim-Senligi-Logo",
+      linkTo: "https://www.bilimsenligi.com/",
+    },
+    {
+      src: `${KampusEtkinlikleriLogo}`,
+      alt: "Kampus-Etkinlikleri-Logo",
+      linkTo: "https://kampusetkinlikleri.com/",
+    },
+    {
+      src: `${UniverlistLogo}`,
+      alt: "Univerlist-Logo",
+      linkTo: "https://univerlist.com/tr/",
+    },
+
     {
       src: `${AjansKurduLogo}`,
       alt: "Ajans-Kurdu-Logo",
       linkTo: "https://ajanskurdu.com/",
     },
-    { src: `${IsKulubuLogo}`, alt: "Is-Kulubu-Logo", linkTo: "" },
+    {
+      src: `${IsKulubuLogo}`,
+      alt: "Is-Kulubu-Logo",
+      linkTo: "https://iskulubu.com/",
+    },
   ],
 };
 
@@ -243,7 +273,7 @@ export const dataScienceContent = {
       alt: "astrid-otonom-logo",
       linkTo: "/Topluluklar/Ytu-Veri-Bilimi",
     },
-    title: "YTÜ YAPAY ZEKA TOPLULUĞU",
+    title: "YTÜ VERİ BİLİMİ TOPLULUĞU",
   },
 
   aboutUs: {
@@ -705,7 +735,7 @@ export const teamsContent = [
   {
     title: "ASTRİD OTONOM",
     logo: {
-      src: `${AstridLogo}`,
+      src: `${AstridGreenLogo}`,
       alt: "astrid-otonom-logo",
       linkTo: "",
     },
@@ -729,7 +759,7 @@ export const astridContent = {
       alt: "Ytu-Mint-Arkaplan",
     },
     logo: {
-      src: `${AstridLogo}`,
+      src: `${AstridGreenLogo}`,
       alt: "astrid-otonom-logo",
       linkTo: "",
     },

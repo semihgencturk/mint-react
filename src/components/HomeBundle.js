@@ -20,9 +20,6 @@ const HomeBundleBackground = styled.img`
   overflow: hidden;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("${(props) => props.src && props.src}");
-  @media (max-width: 850px) {
-    display: none;
-  }
 `;
 
 const HomeBundleTitle = styled.div`
@@ -30,6 +27,10 @@ const HomeBundleTitle = styled.div`
   line-height: 2;
   font-family: Russo One;
   z-index: 1;
+  @media (max-width: 768px) {
+    font-size: 25px;
+    text-align: center;
+  }
 `;
 
 const HomeBundleStatics = styled.div`
@@ -55,6 +56,9 @@ const HomeBundleButton = styled.div`
     box-shadow: 0 0 0 -3px white;
   }
   z-index: 1;
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
 `;
 
 const HomeBundle = ({ background, title, statistics }) => {

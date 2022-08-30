@@ -1,4 +1,5 @@
 import React from "react";
+import { useRef } from "react";
 import Navbar from "../components/Navbar";
 import HomeBundle from "../components/HomeBundle";
 import AboutUs from "../components/AboutUs";
@@ -19,24 +20,29 @@ import { homeContent } from "../contents/Contents";
 // `;
 
 const Home = () => {
+  const myRef = useRef(null);
+  const executeScroll = () =>
+    myRef.current.scrollIntoView({ behavior: "smooth" });
   return (
     <>
       <Navbar />
-      <HomeBundle
-        background={homeContent.bundle.background}
-        title={homeContent.bundle.title}
-        statistics={homeContent.bundle.statistics}
-        sponsorships={homeContent.sponsorships}
-      />
-
-      <AboutUs
-        aboutUs={homeContent.aboutUs.aboutUs}
-        mission={homeContent.aboutUs.mission}
-        vission={homeContent.aboutUs.vission}
-        image1={homeContent.aboutUsImages[0]}
-        image2={homeContent.aboutUsImages[1]}
-      />
-
+      <div onClick={executeScroll}>
+        <HomeBundle
+          background={homeContent.bundle.background}
+          title={homeContent.bundle.title}
+          statistics={homeContent.bundle.statistics}
+          sponsorships={homeContent.sponsorships}
+        />
+      </div>
+      <div ref={myRef}>
+        <AboutUs
+          aboutUs={homeContent.aboutUs.aboutUs}
+          mission={homeContent.aboutUs.mission}
+          vission={homeContent.aboutUs.vission}
+          image1={homeContent.aboutUsImages[0]}
+          image2={homeContent.aboutUsImages[1]}
+        />
+      </div>
       <Upcoming
         title="YAKLAŞAN ETKİNLİKLER"
         achievements={homeContent.upcoming.upcoming}

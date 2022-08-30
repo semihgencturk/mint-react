@@ -8,6 +8,10 @@ const EventItemContainer = styled.div`
   border: solid 3px black;
   background: tranparent;
   display: flex;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 const EventItemType = styled.div`
@@ -88,7 +92,7 @@ const EventCard = ({ event }) => {
         <EventItemLocation>{event.location}</EventItemLocation>
         <EventItemDate>{event.date}</EventItemDate>
         <EventItemButton color={color(event.type)}>
-          Hemen Başvur
+          Başvurular Yakında
         </EventItemButton>
       </EventItemInfos>
     </EventItemContainer>

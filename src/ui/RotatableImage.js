@@ -6,6 +6,10 @@ const RotatableImageContainer = styled.img`
   height: fit-content;
   transform: ${(props) => (props.rotate ? "rotate(10deg)" : "rotate(-10deg)")};
   border-radius: 25px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 const RotatableImage = ({ rotate, src, alt, width }) => {
   return (

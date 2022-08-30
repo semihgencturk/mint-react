@@ -8,19 +8,11 @@ const TeamItemContainer = styled.div`
   height: 50vh;
   display: flex;
   background: transparent;
+  @media (max-width: 768px) {
+    width: 80%;
+    padding-top: 5vh;
+  }
 `;
-
-// const TeamItemTitle = styled.div`
-//   width: 10%;
-//   writing-mode: vertical-rl;
-//   text-orientation: mixed;
-//   transform: rotate(180deg);
-//   color: white;
-//   font-weight: 900;
-//   display: flex;
-//   align-items: flex-end;
-//   justify-content: flex-start;
-// `;
 
 const TeamItemLogoContainer = styled.div`
   width: 90%;
@@ -41,14 +33,8 @@ const TeamItemLogoContainer = styled.div`
 const TeamItem = ({ to, title, logo, fontSize }) => {
   return (
     <TeamItemContainer>
-      {/* <TeamItemTitle>{title}</TeamItemTitle> */}
       <TeamItemLogoContainer>
-        <InternalLogo
-          src={logo.src}
-          alt={logo.alt}
-          width="50"
-          linkTo={logo.linkTo}
-        />
+        <InternalLogo src={logo.src} alt={logo.alt} width="50" linkTo={to} />
         <InternalLinkButton to={to} title={title} fontSize={fontSize} />
       </TeamItemLogoContainer>
     </TeamItemContainer>

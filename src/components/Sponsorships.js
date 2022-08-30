@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 import ExternalLogo from "../ui/ExternalLogo";
 
@@ -46,6 +47,24 @@ const AchievementBoxHeader = styled.div`
 `;
 
 const Sponsorships = ({ sponsorships }) => {
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
+  function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  }
   return (
     <SponsorshipsContainer>
       <AchievementsBox>
@@ -56,7 +75,7 @@ const Sponsorships = ({ sponsorships }) => {
               key={item.alt}
               src={item.src}
               alt={item.alt}
-              width="7"
+              width={windowSize.innerWidth > 768 ? "7" : "20"}
               linkTo={item.linkTo}
             />
           ))}
