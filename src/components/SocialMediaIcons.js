@@ -16,7 +16,7 @@ const SocialMediaIcon = styled.span`
   color: black;
 
   :hover {
-    color: red;
+    color: #f05454;
   }
 `;
 
