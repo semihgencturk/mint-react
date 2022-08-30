@@ -11,7 +11,7 @@ const NavbarHamburgerContainer = styled.div`
   align-items: flex-end;
   justify-content: flex-end;
   position: absolute;
-  top: 5px;
+  top: 1vh;
   right: 15px;
 `;
 

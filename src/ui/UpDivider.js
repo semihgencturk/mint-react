@@ -4,7 +4,7 @@ import styled from "styled-components";
 const UpDividerContainer = styled.div`
   width: 99%;
   height: 6vh;
-  background: #f7f7f7;
+  background: #f5f5f5;
   transform: rotate(-3deg);
   text-align: end;
   color: black;
@@ -13,6 +13,10 @@ const UpDividerContainer = styled.div`
   font-size: 25px;
   margin-top: -1vh;
   z-index: 1;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const UpDivider = ({ text }) => {

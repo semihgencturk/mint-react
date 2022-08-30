@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 import InternalLogo from "./InternalLogo";
 import InternalLinkButton from "./InternalLinkButton";
@@ -31,10 +32,33 @@ const TeamItemLogoContainer = styled.div`
 `;
 
 const TeamItem = ({ to, title, logo, fontSize }) => {
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
+  function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  }
   return (
     <TeamItemContainer>
       <TeamItemLogoContainer>
-        <InternalLogo src={logo.src} alt={logo.alt} width="50" linkTo={to} />
+        <InternalLogo
+          src={logo.src}
+          alt={logo.alt}
+          width={windowSize.innerWidth > 768 ? "50" : "30"}
+          linkTo={to}
+        />
         <InternalLinkButton to={to} title={title} fontSize={fontSize} />
       </TeamItemLogoContainer>
     </TeamItemContainer>

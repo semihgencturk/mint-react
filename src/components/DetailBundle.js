@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 import ExternalLogo from "../ui/ExternalLogo";
 import InternalLogo from "../ui/InternalLogo";
@@ -22,9 +23,6 @@ const DetailBundleBackground = styled.img`
   overflow: hidden;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("${(props) => props.src && props.src}");
-  @media (max-width: 850px) {
-    display: none;
-  }
 `;
 
 const LogoContainer = styled.div`
@@ -41,6 +39,7 @@ const DetailBundleTitle = styled.div`
   line-height: 2;
   font-family: Russo One;
   z-index: 1;
+  text-align: center;
 `;
 
 const DetailBundleSponsorhips = styled.div`
@@ -73,6 +72,25 @@ const DetailBundleSponsorhips = styled.div`
 `;
 
 const DetailBundle = ({ background, logo, title, sponsorships }) => {
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
+  function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  }
+
   return (
     <DetailBundleContainer>
       <DetailBundleBackground src={background.src} alt={background.alt} />
@@ -80,7 +98,7 @@ const DetailBundle = ({ background, logo, title, sponsorships }) => {
         <InternalLogo
           src={logo.src}
           alt={logo.alt}
-          width={20}
+          width={windowSize.innerWidth > 768 ? "20" : "40"}
           linkTo={logo.linkTo}
         />
         <DetailBundleTitle>{title}</DetailBundleTitle>
@@ -91,7 +109,7 @@ const DetailBundle = ({ background, logo, title, sponsorships }) => {
             key={sponsorship.src}
             src={sponsorship.src}
             alt={sponsorship.alt}
-            width={5}
+            width={windowSize.innerWidth > 768 ? "5" : "20"}
             linkTo={sponsorship.linkTo}
           />
         ))}

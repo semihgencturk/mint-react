@@ -75,7 +75,7 @@ const Sponsorships = ({ sponsorships }) => {
               key={item.alt}
               src={item.src}
               alt={item.alt}
-              width={windowSize.innerWidth > 768 ? "7" : "20"}
+              width={windowSize.innerWidth > 768 ? "7" : "30"}
               linkTo={item.linkTo}
             />
           ))}
