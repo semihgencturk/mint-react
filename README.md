@@ -1,6 +1,6 @@
 # Mint Official Website
 
-- It is an alternative website for the main project I developed for a student community in [Yildiz Technical University](https://yildiz.edu.tr/en) 
+-  I developed this website for a student community in [Yildiz Technical University](https://yildiz.edu.tr/en) 
 - You can reach the website via [this link](https://ytumint.netlify.app/)
 
 ## About The Project
