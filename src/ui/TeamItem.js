@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Logo from "./Logo";
+import InternalLogo from "./InternalLogo";
 import InternalLinkButton from "./InternalLinkButton";
 
 const TeamItemContainer = styled.div`
@@ -43,7 +43,12 @@ const TeamItem = ({ to, title, logo, fontSize }) => {
     <TeamItemContainer>
       {/* <TeamItemTitle>{title}</TeamItemTitle> */}
       <TeamItemLogoContainer>
-        <Logo src={logo.src} alt={logo.alt} width="50%" />
+        <InternalLogo
+          src={logo.src}
+          alt={logo.alt}
+          width="50"
+          linkTo={logo.linkTo}
+        />
         <InternalLinkButton to={to} title={title} fontSize={fontSize} />
       </TeamItemLogoContainer>
     </TeamItemContainer>

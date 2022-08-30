@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Logo from "../ui/Logo";
+import ExternalLogo from "../ui/ExternalLogo";
+import InternalLogo from "../ui/InternalLogo";
 
 const DetailBundleContainer = styled.div`
   width: 100%;
@@ -76,16 +77,22 @@ const DetailBundle = ({ background, logo, title, sponsorships }) => {
     <DetailBundleContainer>
       <DetailBundleBackground src={background.src} alt={background.alt} />
       <LogoContainer>
-        <Logo src={logo.src} alt={logo.alt} width={150} />
+        <InternalLogo
+          src={logo.src}
+          alt={logo.alt}
+          width={20}
+          linkTo={logo.linkTo}
+        />
         <DetailBundleTitle>{title}</DetailBundleTitle>
       </LogoContainer>
       <DetailBundleSponsorhips>
         {sponsorships.map((sponsorship) => (
-          <Logo
+          <ExternalLogo
             key={sponsorship.src}
             src={sponsorship.src}
             alt={sponsorship.alt}
-            width={50}
+            width={5}
+            linkTo={sponsorship.linkTo}
           />
         ))}
       </DetailBundleSponsorhips>

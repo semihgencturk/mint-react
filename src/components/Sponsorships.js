@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Logo from "../ui/Logo";
+import ExternalLogo from "../ui/ExternalLogo";
 
 const SponsorshipsContainer = styled.div`
   width: 90%;
@@ -52,7 +52,12 @@ const Sponsorships = ({ sponsorships }) => {
         <AchievementBoxHeader>SPONSORLARIMIZ</AchievementBoxHeader>
         <SponsorshipsList>
           {sponsorships.map((item) => (
-            <Logo key={item.alt} src={item.src} alt={item.alt} width="7%" />
+            <ExternalLogo
+              key={item.alt}
+              src={item.src}
+              alt={item.alt}
+              width="7"
+            />
           ))}
         </SponsorshipsList>
       </AchievementsBox>

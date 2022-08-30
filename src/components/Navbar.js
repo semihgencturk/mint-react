@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import NavbarNonColapsableItem from "../ui/NavbarNonColapsableItem";
 import MintGreenLogo from "../assets/MintGreenLogo.png";
-import Logo from "../ui/Logo";
+import InternalLogo from "../ui/InternalLogo";
 
 const NavbarContainer = styled.div`
   width: 100%;
@@ -15,7 +15,7 @@ const NavbarContainer = styled.div`
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
 
   @media (max-width: 768px) {
     justify-content: space-evenly;
@@ -28,7 +28,12 @@ const Navbar = () => {
       <NavbarNonColapsableItem title="Hakkımızda" linkTo="/" />
       <NavbarNonColapsableItem title="Sponsorluk" linkTo="/Iletisim" />
       <NavbarNonColapsableItem title="İletişim" linkTo="/Iletisim" />
-      <Logo src={MintGreenLogo} alt="Ytu-Mint-Logo" width={70} />
+      <InternalLogo
+        src={MintGreenLogo}
+        alt="Ytu-Mint-Logo"
+        width={5}
+        linkTo="/"
+      />
       <NavbarNonColapsableItem title="Topluluklar" linkTo="/Topluluklar" />
       <NavbarNonColapsableItem title="Takımlar" linkTo="/Takimlar" />
       <NavbarNonColapsableItem title="Etkinlikler" linkTo="/Etkinlikler" />

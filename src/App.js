@@ -11,13 +11,14 @@ import Ai from "./pages/Ai";
 import Teams from "./pages/Teams";
 import Aurora from "./pages/Aurora";
 import Astrid from "./pages/Astrid";
+import Partners from "./pages/Partners";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Sponsorluk" element={<Contact />} />
+        <Route path="/Sponsorluk" element={<Partners />} />
         <Route path="/Iletisim" element={<Contact />} />
         <Route path="/Etkinlikler" element={<Events />} />
         <Route path="/Topluluklar" element={<Community />} />

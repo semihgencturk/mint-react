@@ -12,7 +12,7 @@ import MintGreenLogo from "../assets/MintGreenLogo.png";
 import BundleBackground from "../assets/BundleBackground.jpg";
 import KodluyoruzLogo from "../assets/KodluyoruzLogo.png";
 import JuniorProjectInfo from "../assets/JuniorProjectInfo.png";
-import MintBGLogo from "../assets/MintBGLogo.png";
+import AiLogo from "../assets/AiLogo.jpeg";
 
 export const homeContent = {
   bundle: {
@@ -145,12 +145,49 @@ export const homeContent = {
   ],
 };
 
+export const contactContent = {
+  logos: [
+    {
+      src: `${DataScienceLogo}`,
+      alt: "ytü-veri-bilimi-topluluğu-logo",
+      linkTo: "/Topluluklar/Ytu-Veri-Bilimi",
+    },
+
+    {
+      src: `${CyberLogo}`,
+      alt: "ytü-siber-güvenlik-topluluğu-logo",
+      linkTo: "/Topluluklar/Ytu-Siber-Guvenlik",
+    },
+    {
+      src: `${BlockchainLogo}`,
+      alt: "ytü-blockchain-topluluğu-logo",
+      linkTo: "/Topluluklar/Ytu-Blockchain",
+    },
+    {
+      src: `${AiLogo}`,
+      alt: "mint-yapay-zeka-logo",
+      linkTo: "/Topluluklar/Mint-Yapay-Zeka",
+    },
+    {
+      src: `${AstridLogo}`,
+      alt: "astrid-otonom-logo",
+      linkTo: "/Takimlar/Astrid-Otonom",
+    },
+    {
+      src: `${AuroraLogo}`,
+      alt: "aurora-uav-logo",
+      linkTo: "/Takimlar/Aurora-Uav",
+    },
+  ],
+};
+
 export const communityContent = [
   {
     title: "YTÜ VERİ BİLİMİ TOPLULUĞU",
     logo: {
       src: `${DataScienceLogo}`,
       alt: "ytü-veri-bilimi-topluluğu-logo",
+      linkTo: "/Topluluklar/Ytu-Veri-Bilimi",
     },
     to: "/Topluluklar/Ytu-Veri-Bilimi",
   },
@@ -159,14 +196,16 @@ export const communityContent = [
     logo: {
       src: `${CyberLogo}`,
       alt: "ytü-siber-güvenlik-topluluğu-logo",
+      linkTo: "/Topluluklar/Ytu-Siber-Guvenlik",
     },
-    to: "/Topluluklar/Yildiz-Siber-Guvenlik",
+    to: "/Topluluklar/Ytu-Siber-Guvenlik",
   },
   {
     title: "YTÜ BLOCKCHAİN TOPLULUĞU",
     logo: {
       src: `${BlockchainLogo}`,
       alt: "ytü-blockchain-topluluğu-logo",
+      linkTo: "/Topluluklar/Ytu-Blockchain",
     },
     to: "/Topluluklar/Ytu-Blockchain",
   },
@@ -175,6 +214,7 @@ export const communityContent = [
     logo: {
       src: `${MintGreenLogo}`,
       alt: "mint-yapay-zeka-logo",
+      linkTo: "/Topluluklar/Mint-Yapay-Zeka",
     },
     to: "/Topluluklar/Mint-Yapay-Zeka",
   },
@@ -188,267 +228,10 @@ export const dataScienceContent = {
     },
     logo: {
       src: `${DataScienceLogo}`,
-      alt: "ytü-veri-bilimi-logo",
-    },
-    title: "YTÜ VERİ BİLİMİ TOPLULUĞU",
-  },
-  aboutUs: {
-    aboutUs:
-      "MİNT Yıldız Teknik Üniversitesi'nde faaliyet gösteren bir öğrenci kulübüdür. Başta yazılımın her alanını kapsayacak şekilde eğitimler, zirveler, workshoplar, yarışmalar düzenlerken, buna ek olarak öğrencilerin soft skillerini geliştirmeyi amaçlayan çalışmalar da yapmaktadır.",
-    mission:
-      "Öğrencilerin, kendileri ve birbirleri için yeteneklerini geliştirmelerini, birlikte kazanma duygusunu yaşayarak rekabetin gerçek manasını anlamlarını sağlamak.",
-    vission:
-      "Ülkemize, aldığını vermek felsefesine inanarak çalışan fedakar, idealist ve özverili bireyler kazandırmak",
-  },
-
-  aboutUsImages: [
-    { src: `${MintPhoto1}`, alt: "Mint-Kulübü" },
-    { src: `${MintPhoto1}`, alt: "Mint-Kulübü" },
-  ],
-
-  upcoming: {
-    upcoming: [
-      {
-        name: "Yıldız Yazılım Zirvesi / 25-26-27 EKİM",
-        href: "https://github.com/",
-      },
-      {
-        name: "Ytü Yapay Zeka ve Veri Bilimi Zirvesi / 2023 İlkbahar",
-        href: "https://github.com/",
-      },
-      {
-        name: "Yıldız Siber Güvenlik Zirvesi / 2023 İlkbahar",
-        href: "https://github.com/",
-      },
-      {
-        name: "Ytü Blockchain Zirvesi / 2023 İlkbahar",
-        href: "https://github.com/",
-      },
-    ],
-  },
-
-  upcomingImages: [
-    { src: `${JuniorProjectInfo}`, alt: "Mint-Etkinlik-Görseli" },
-  ],
-
-  members: {
-    members: [
-      { name: "Melike Sude Ceylan - Başkan", href: "https://github.com/" },
-      {
-        name: "İrfan Ege Yılmaz - Başkan Yardımcısı",
-        href: "https://github.com/",
-      },
-      {
-        name: "Semih Gençtürk - Başkan Yardımcısı",
-        href: "https://github.com/",
-      },
-      { name: "Seray Güler - Kulüp Sekreteri", href: "https://github.com/" },
-      { name: "Umut Para - Sayman", href: "https://github.com/" },
-      {
-        name: "Yusuf Yılmaz - Network Birim Koordinatörü",
-        href: "https://github.com/",
-      },
-      {
-        name: "Ergin Can Muaf - Eğitim Birimi Koordinatörü",
-        href: "https://github.com/",
-      },
-      {
-        name: "Eren Şükrü Kür - Eğitim Birimi Koordinatörü",
-        href: "https://github.com/",
-      },
-      {
-        name: "Ayçanur Betül Çelebi - Medya Birimi Koordinatörü",
-        href: "https://github.com/",
-      },
-      {
-        name: "Eren Çibuk - Medya Birimi Koordinatörü",
-        href: "https://github.com/",
-      },
-      {
-        name: "Asiye Asiye - Proje Birimi Koordinatörü",
-        href: "https://github.com/",
-      },
-      {
-        name: "Batuhan Can Madenci - Proje Birimi Koordinatörü",
-        href: "https://github.com/",
-      },
-    ],
-  },
-
-  membersImages: [
-    { src: `${MintPhoto1}`, alt: "Mint-Üyeler" },
-    { src: `${MintPhoto1}`, alt: "Mint-Üyeler" },
-    { src: `${MintPhoto1}`, alt: "Mint-Üyeler" },
-  ],
-
-  links: {
-    linkedin: "https://github.com/",
-    twitter: "https://github.com/",
-    instagram: "https://github.com/",
-    youtube: "https://github.com/",
-    mail: "mintunity@gmail.com",
-    member: "https://github.com/",
-    sponsorship: "https://github.com/",
-  },
-
-  sponsorships: [
-    { src: `${YtuLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${KodluyoruzLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${AuroraLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${BlockchainLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${DataScienceLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${CyberLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${YtuLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${KodluyoruzLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${AuroraLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${BlockchainLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${DataScienceLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${CyberLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${YtuLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${KodluyoruzLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${AuroraLogo}`, alt: "Kodluyoruz-Logo" },
-  ],
-};
-export const cyberContent = {
-  bundle: {
-    background: {
-      src: `${BundleBackground}`,
-      alt: "Ytu-Mint-Arkaplan",
-    },
-    logo: {
-      src: `${CyberLogo}`,
       alt: "astrid-otonom-logo",
+      linkTo: "/Topluluklar/Ytu-Veri-Bilimi",
     },
-    title: "Yıldız Siber Güvenlik Topluluğu",
-  },
-  aboutUs: {
-    aboutUs:
-      "MİNT Yıldız Teknik Üniversitesi'nde faaliyet gösteren bir öğrenci kulübüdür. Başta yazılımın her alanını kapsayacak şekilde eğitimler, zirveler, workshoplar, yarışmalar düzenlerken, buna ek olarak öğrencilerin soft skillerini geliştirmeyi amaçlayan çalışmalar da yapmaktadır.",
-    mission:
-      "Öğrencilerin, kendileri ve birbirleri için yeteneklerini geliştirmelerini, birlikte kazanma duygusunu yaşayarak rekabetin gerçek manasını anlamlarını sağlamak.",
-    vission:
-      "Ülkemize, aldığını vermek felsefesine inanarak çalışan fedakar, idealist ve özverili bireyler kazandırmak",
-  },
-
-  aboutUsImages: [
-    { src: `${MintPhoto1}`, alt: "Mint-Kulübü" },
-    { src: `${MintPhoto1}`, alt: "Mint-Kulübü" },
-  ],
-
-  upcoming: {
-    upcoming: [
-      {
-        name: "Yıldız Yazılım Zirvesi / 25-26-27 EKİM",
-        href: "https://github.com/",
-      },
-      {
-        name: "Ytü Yapay Zeka ve Veri Bilimi Zirvesi / 2023 İlkbahar",
-        href: "https://github.com/",
-      },
-      {
-        name: "Yıldız Siber Güvenlik Zirvesi / 2023 İlkbahar",
-        href: "https://github.com/",
-      },
-      {
-        name: "Ytü Blockchain Zirvesi / 2023 İlkbahar",
-        href: "https://github.com/",
-      },
-    ],
-  },
-
-  upcomingImages: [
-    { src: `${JuniorProjectInfo}`, alt: "Mint-Etkinlik-Görseli" },
-  ],
-
-  members: {
-    members: [
-      { name: "Melike Sude Ceylan - Başkan", href: "https://github.com/" },
-      {
-        name: "İrfan Ege Yılmaz - Başkan Yardımcısı",
-        href: "https://github.com/",
-      },
-      {
-        name: "Semih Gençtürk - Başkan Yardımcısı",
-        href: "https://github.com/",
-      },
-      { name: "Seray Güler - Kulüp Sekreteri", href: "https://github.com/" },
-      { name: "Umut Para - Sayman", href: "https://github.com/" },
-      {
-        name: "Yusuf Yılmaz - Network Birim Koordinatörü",
-        href: "https://github.com/",
-      },
-      {
-        name: "Ergin Can Muaf - Eğitim Birimi Koordinatörü",
-        href: "https://github.com/",
-      },
-      {
-        name: "Eren Şükrü Kür - Eğitim Birimi Koordinatörü",
-        href: "https://github.com/",
-      },
-      {
-        name: "Ayçanur Betül Çelebi - Medya Birimi Koordinatörü",
-        href: "https://github.com/",
-      },
-      {
-        name: "Eren Çibuk - Medya Birimi Koordinatörü",
-        href: "https://github.com/",
-      },
-      {
-        name: "Asiye Asiye - Proje Birimi Koordinatörü",
-        href: "https://github.com/",
-      },
-      {
-        name: "Batuhan Can Madenci - Proje Birimi Koordinatörü",
-        href: "https://github.com/",
-      },
-    ],
-  },
-
-  membersImages: [
-    { src: `${MintPhoto1}`, alt: "Mint-Üyeler" },
-    { src: `${MintPhoto1}`, alt: "Mint-Üyeler" },
-    { src: `${MintPhoto1}`, alt: "Mint-Üyeler" },
-  ],
-
-  links: {
-    linkedin: "https://github.com/",
-    twitter: "https://github.com/",
-    instagram: "https://github.com/",
-    youtube: "https://github.com/",
-    mail: "mintunity@gmail.com",
-    member: "https://github.com/",
-    sponsorship: "https://github.com/",
-  },
-
-  sponsorships: [
-    { src: `${YtuLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${KodluyoruzLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${AuroraLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${BlockchainLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${DataScienceLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${CyberLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${YtuLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${KodluyoruzLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${AuroraLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${BlockchainLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${DataScienceLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${CyberLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${YtuLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${KodluyoruzLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${AuroraLogo}`, alt: "Kodluyoruz-Logo" },
-  ],
-};
-export const blockchainContent = {
-  bundle: {
-    background: {
-      src: `${BundleBackground}`,
-      alt: "Ytu-Mint-Arkaplan",
-    },
-    logo: {
-      src: `${MintBGLogo}`,
-      alt: "astrid-otonom-logo",
-    },
-    title: "MİNT YAPAY ZEKA ÇALIŞMA GRUBU",
+    title: "YTÜ YAPAY ZEKA TOPLULUĞU",
   },
 
   aboutUs: {
@@ -539,16 +322,241 @@ export const blockchainContent = {
   ],
 
   sponsorships: [
-    { src: `${YtuLogo}`, alt: "sau" },
-    { src: `${YtuLogo}`, alt: "ss" },
-    { src: `${YtuLogo}`, alt: "sya" },
-    { src: `${YtuLogo}`, alt: "ssa" },
-    { src: `${YtuLogo}`, alt: "saa" },
-    { src: `${YtuLogo}`, alt: "sas" },
-    { src: `${YtuLogo}`, alt: "fsa" },
-    { src: `${YtuLogo}`, alt: "hsa" },
-    { src: `${YtuLogo}`, alt: "fgsa" },
-    { src: `${YtuLogo}`, alt: "sja" },
+    { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
+    { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
+    { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
+  ],
+
+  links: {
+    linkedin: "https://github.com/",
+    twitter: "https://github.com/",
+    instagram: "https://github.com/",
+    youtube: "https://github.com/",
+    mail: "astridotonom@gmail.com",
+    member: "https://github.com/",
+    sponsorship: "https://github.com/",
+  },
+};
+export const cyberContent = {
+  bundle: {
+    background: {
+      src: `${BundleBackground}`,
+      alt: "Ytu-Mint-Arkaplan",
+    },
+    logo: {
+      src: `${CyberLogo}`,
+      alt: "ytü-siber-güvenlik-logo",
+      linkTo: "",
+    },
+    title: "YILDIZ SİBER GÜVENLİK TOPLULUĞU",
+  },
+
+  aboutUs: {
+    aboutUs:
+      "YTÜ-Astrid Otonom Takımı, Ekim 2020’de farklı mühendislik disiplinleri üzerine çalışan üniversite öğrencileri tarafından kurulan bir proje takımıdır.Takımımız “mobilite özellikler taşıyan otonom sistemler” üzerine çalışmaktadır ve süregelen teorik eğitimlerimizdeki öğretileri uygulamalı olarak hayata geçirmeyi hedeflemektedir.",
+    mission:
+      "Geliştirdiğimiz araçlar ve katıldığımız yarışlar ile otonom sistemlerin yaygınlaşmasını sağlamak, bu amaç ile üniversite – sanayi işbirliği çerçevesinde şirket destekleri alarak daha büyük ve ses getirecek projelere imza atmaktır. Yapmış olduğumuz çalışmalar her ne kadar teknik projeler olsa da aynı zamanda bizim için sosyal sorumluluktur. Öğrendiğimiz her bilgiyi paylaşmak hepimizin ortak paydasıdır.",
+    vission:
+      "Otonom teknolojilerinin kullanıldığı sistemleri geliştirerek, ülkemiz ve dünya çapında düzenlenen yarış etkinliklerinde ülkemizi başarıyla temsil etmektir. Lisans düzeyinde öğrencilerden oluşan takımımızın teknik projelerde ve AR-GE faaliyetleri içerisinde yer alarak nitelikli mühendisler olarak yetişmesini sağlamak; diğer üniversitelerden öğrenci arkadaşlarımızı da bu konulara teşvik etmektir.",
+  },
+
+  aboutUsImages: [
+    { src: `${AstridTeamPhoto1}`, alt: "Astrid-Takim" },
+    { src: `${AstridTeamPhoto2}`, alt: "Astrid-Takim" },
+  ],
+
+  achievements: {
+    achievements: [
+      {
+        name: "Yıldız Yazılım Zirvesi / 25-26-27 EKİM",
+        href: "https://github.com/",
+      },
+      {
+        name: "Ytü Yapay Zeka ve Veri Bilimi Zirvesi / 2023 İlkbahar",
+        href: "https://github.com/",
+      },
+      {
+        name: "Yıldız Siber Güvenlik Zirvesi / 2023 İlkbahar",
+        href: "https://github.com/",
+      },
+      {
+        name: "Ytü Blockchain Zirvesi / 2023 İlkbahar",
+        href: "https://github.com/",
+      },
+    ],
+  },
+
+  achievementsImages: [{ src: `${TeknofestPhoto1}`, alt: "Teknofest" }],
+
+  teamMembers: {
+    teamMembers: [
+      { name: "Melike Sude Ceylan - Başkan", href: "https://github.com/" },
+      {
+        name: "İrfan Ege Yılmaz - Başkan Yardımcısı",
+        href: "https://github.com/",
+      },
+      {
+        name: "Semih Gençtürk - Başkan Yardımcısı",
+        href: "https://github.com/",
+      },
+      { name: "Seray Güler - Kulüp Sekreteri", href: "https://github.com/" },
+      { name: "Umut Para - Sayman", href: "https://github.com/" },
+      {
+        name: "Yusuf Yılmaz - Network Birim Koordinatörü",
+        href: "https://github.com/",
+      },
+      {
+        name: "Ergin Can Muaf - Eğitim Birimi Koordinatörü",
+        href: "https://github.com/",
+      },
+      {
+        name: "Eren Şükrü Kür - Eğitim Birimi Koordinatörü",
+        href: "https://github.com/",
+      },
+      {
+        name: "Ayçanur Betül Çelebi - Medya Birimi Koordinatörü",
+        href: "https://github.com/",
+      },
+      {
+        name: "Eren Çibuk - Medya Birimi Koordinatörü",
+        href: "https://github.com/",
+      },
+      {
+        name: "Asiye Asiye - Proje Birimi Koordinatörü",
+        href: "https://github.com/",
+      },
+      {
+        name: "Batuhan Can Madenci - Proje Birimi Koordinatörü",
+        href: "https://github.com/",
+      },
+    ],
+  },
+
+  teamMembersImages: [
+    { src: `${AstridTeamPhoto1}`, alt: "Astrid-Takim" },
+    { src: `${AstridTeamPhoto2}`, alt: "Astrid-Takim" },
+    { src: `${AstridTeamPhoto1}`, alt: "Astrid-Takim" },
+  ],
+
+  sponsorships: [
+    { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
+    { src: `${YtuLogo}`, alt: "ss", linkTo: "" },
+  ],
+
+  links: {
+    linkedin: "https://github.com/",
+    twitter: "https://github.com/",
+    instagram: "https://github.com/",
+    youtube: "https://github.com/",
+    mail: "astridotonom@gmail.com",
+    member: "https://github.com/",
+    sponsorship: "https://github.com/",
+  },
+};
+export const blockchainContent = {
+  bundle: {
+    background: {
+      src: `${BundleBackground}`,
+      alt: "Ytu-Mint-Arkaplan",
+    },
+    logo: {
+      src: `${BlockchainLogo}`,
+      alt: "ytü-blockchain-logo",
+      linkTo: "",
+    },
+    title: "YTÜ BLOCKCHAİN TOPLULUĞU",
+  },
+
+  aboutUs: {
+    aboutUs:
+      "YTÜ-Astrid Otonom Takımı, Ekim 2020’de farklı mühendislik disiplinleri üzerine çalışan üniversite öğrencileri tarafından kurulan bir proje takımıdır.Takımımız “mobilite özellikler taşıyan otonom sistemler” üzerine çalışmaktadır ve süregelen teorik eğitimlerimizdeki öğretileri uygulamalı olarak hayata geçirmeyi hedeflemektedir.",
+    mission:
+      "Geliştirdiğimiz araçlar ve katıldığımız yarışlar ile otonom sistemlerin yaygınlaşmasını sağlamak, bu amaç ile üniversite – sanayi işbirliği çerçevesinde şirket destekleri alarak daha büyük ve ses getirecek projelere imza atmaktır. Yapmış olduğumuz çalışmalar her ne kadar teknik projeler olsa da aynı zamanda bizim için sosyal sorumluluktur. Öğrendiğimiz her bilgiyi paylaşmak hepimizin ortak paydasıdır.",
+    vission:
+      "Otonom teknolojilerinin kullanıldığı sistemleri geliştirerek, ülkemiz ve dünya çapında düzenlenen yarış etkinliklerinde ülkemizi başarıyla temsil etmektir. Lisans düzeyinde öğrencilerden oluşan takımımızın teknik projelerde ve AR-GE faaliyetleri içerisinde yer alarak nitelikli mühendisler olarak yetişmesini sağlamak; diğer üniversitelerden öğrenci arkadaşlarımızı da bu konulara teşvik etmektir.",
+  },
+
+  aboutUsImages: [
+    { src: `${AstridTeamPhoto1}`, alt: "Astrid-Takim" },
+    { src: `${AstridTeamPhoto2}`, alt: "Astrid-Takim" },
+  ],
+
+  achievements: {
+    achievements: [
+      {
+        name: "Yıldız Yazılım Zirvesi / 25-26-27 EKİM",
+        href: "https://github.com/",
+      },
+      {
+        name: "Ytü Yapay Zeka ve Veri Bilimi Zirvesi / 2023 İlkbahar",
+        href: "https://github.com/",
+      },
+      {
+        name: "Yıldız Siber Güvenlik Zirvesi / 2023 İlkbahar",
+        href: "https://github.com/",
+      },
+      {
+        name: "Ytü Blockchain Zirvesi / 2023 İlkbahar",
+        href: "https://github.com/",
+      },
+    ],
+  },
+
+  achievementsImages: [{ src: `${TeknofestPhoto1}`, alt: "Teknofest" }],
+
+  teamMembers: {
+    teamMembers: [
+      { name: "Melike Sude Ceylan - Başkan", href: "https://github.com/" },
+      {
+        name: "İrfan Ege Yılmaz - Başkan Yardımcısı",
+        href: "https://github.com/",
+      },
+      {
+        name: "Semih Gençtürk - Başkan Yardımcısı",
+        href: "https://github.com/",
+      },
+      { name: "Seray Güler - Kulüp Sekreteri", href: "https://github.com/" },
+      { name: "Umut Para - Sayman", href: "https://github.com/" },
+      {
+        name: "Yusuf Yılmaz - Network Birim Koordinatörü",
+        href: "https://github.com/",
+      },
+      {
+        name: "Ergin Can Muaf - Eğitim Birimi Koordinatörü",
+        href: "https://github.com/",
+      },
+      {
+        name: "Eren Şükrü Kür - Eğitim Birimi Koordinatörü",
+        href: "https://github.com/",
+      },
+      {
+        name: "Ayçanur Betül Çelebi - Medya Birimi Koordinatörü",
+        href: "https://github.com/",
+      },
+      {
+        name: "Eren Çibuk - Medya Birimi Koordinatörü",
+        href: "https://github.com/",
+      },
+      {
+        name: "Asiye Asiye - Proje Birimi Koordinatörü",
+        href: "https://github.com/",
+      },
+      {
+        name: "Batuhan Can Madenci - Proje Birimi Koordinatörü",
+        href: "https://github.com/",
+      },
+    ],
+  },
+
+  teamMembersImages: [
+    { src: `${AstridTeamPhoto1}`, alt: "Astrid-Takim" },
+    { src: `${AstridTeamPhoto2}`, alt: "Astrid-Takim" },
+    { src: `${AstridTeamPhoto1}`, alt: "Astrid-Takim" },
+  ],
+
+  sponsorships: [
+    { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
+    { src: `${YtuLogo}`, alt: "ss", linkTo: "" },
   ],
 
   links: {
@@ -568,8 +576,9 @@ export const aiContent = {
       alt: "Ytu-Mint-Arkaplan",
     },
     logo: {
-      src: `${MintBGLogo}`,
-      alt: "astrid-otonom-logo",
+      src: `${AiLogo}`,
+      alt: "mint-yapay-zeka-logo",
+      linkTo: "",
     },
     title: "MİNT YAPAY ZEKA ÇALIŞMA GRUBU",
   },
@@ -662,16 +671,8 @@ export const aiContent = {
   ],
 
   sponsorships: [
-    { src: `${YtuLogo}`, alt: "sau" },
-    { src: `${YtuLogo}`, alt: "ss" },
-    { src: `${YtuLogo}`, alt: "sya" },
-    { src: `${YtuLogo}`, alt: "ssa" },
-    { src: `${YtuLogo}`, alt: "saa" },
-    { src: `${YtuLogo}`, alt: "sas" },
-    { src: `${YtuLogo}`, alt: "fsa" },
-    { src: `${YtuLogo}`, alt: "hsa" },
-    { src: `${YtuLogo}`, alt: "fgsa" },
-    { src: `${YtuLogo}`, alt: "sja" },
+    { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
+    { src: `${YtuLogo}`, alt: "ss", linkTo: "" },
   ],
 
   links: {
@@ -691,6 +692,7 @@ export const teamsContent = [
     logo: {
       src: `${AstridLogo}`,
       alt: "astrid-otonom-logo",
+      linkTo: "",
     },
     to: "/Takimlar/Astrid-Otonom",
   },
@@ -699,6 +701,7 @@ export const teamsContent = [
     logo: {
       src: `${AuroraLogo}`,
       alt: "aurora-uav-logo",
+      linkTo: "",
     },
     to: "/Takimlar/Aurora-Uav",
   },
@@ -713,6 +716,7 @@ export const astridContent = {
     logo: {
       src: `${AstridLogo}`,
       alt: "astrid-otonom-logo",
+      linkTo: "",
     },
     title: "ASTRİD OTONOM",
   },
@@ -805,16 +809,8 @@ export const astridContent = {
   ],
 
   sponsorships: [
-    { src: `${YtuLogo}`, alt: "sau" },
-    { src: `${YtuLogo}`, alt: "ss" },
-    { src: `${YtuLogo}`, alt: "sya" },
-    { src: `${YtuLogo}`, alt: "ssa" },
-    { src: `${YtuLogo}`, alt: "saa" },
-    { src: `${YtuLogo}`, alt: "sas" },
-    { src: `${YtuLogo}`, alt: "fsa" },
-    { src: `${YtuLogo}`, alt: "hsa" },
-    { src: `${YtuLogo}`, alt: "fgsa" },
-    { src: `${YtuLogo}`, alt: "sja" },
+    { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
+    { src: `${YtuLogo}`, alt: "ss", linkTo: "" },
   ],
 
   links: {
@@ -837,6 +833,7 @@ export const auroraContent = {
     logo: {
       src: `${AuroraLogo}`,
       alt: "aurora-uav-logo",
+      linkTo: "",
     },
     title: "AURORA UAV",
   },
@@ -929,16 +926,8 @@ export const auroraContent = {
   ],
 
   sponsorships: [
-    { src: `${YtuLogo}`, alt: "sau" },
-    { src: `${YtuLogo}`, alt: "ss" },
-    { src: `${YtuLogo}`, alt: "sya" },
-    { src: `${YtuLogo}`, alt: "ssa" },
-    { src: `${YtuLogo}`, alt: "saa" },
-    { src: `${YtuLogo}`, alt: "sas" },
-    { src: `${YtuLogo}`, alt: "fsa" },
-    { src: `${YtuLogo}`, alt: "hsa" },
-    { src: `${YtuLogo}`, alt: "fgsa" },
-    { src: `${YtuLogo}`, alt: "sja" },
+    { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
+    { src: `${YtuLogo}`, alt: "ss", linkTo: "" },
   ],
 
   links: {
@@ -951,3 +940,55 @@ export const auroraContent = {
     sponsorship: "https://github.com/",
   },
 };
+
+export const eventsData = [
+  {
+    name: "Yıldız Yazılım Zirvesi",
+    date: "25-26-27 Ekim 2022",
+    location: " Ytü Davutpaşa Kampüsü Tarihi Hamam",
+    by: "Mint",
+    type: "zirve",
+  },
+  {
+    name: "Mint Tanışma Kahvaltısı",
+    date: "15 Ekim 2022",
+    location: "Yer Belli Değil",
+    by: "Mint",
+    type: "buluşma",
+  },
+  {
+    name: "Python Eğitimi",
+    date: "1.dönem",
+    location: "Ytü Davutpaşa Kampüsü",
+    by: "Mint",
+    type: "eğitim",
+  },
+  {
+    name: "SQL Eğitimi",
+    date: "1.dönem",
+    location: "Ytü Davutpaşa Kampüsü",
+    by: "Mint",
+    type: "eğitim",
+  },
+  {
+    name: "Ytü Yapay Zeka ve Veri Bilimi Zirvesi",
+    date: "2.dönem",
+    location: "Ytü Davutpaşa Kampüsü Tarihi Hamam",
+    by: "Mint - Ytü Veri Bilimi Topluluğu",
+    type: "zirve",
+  },
+  {
+    name: "Yıldız Siber Güvenlik Zirvesi",
+    date: "2.dönem",
+    location: "Ytü Davutpaşa Kampüsü Tarihi Hamam",
+    by: "Mint - Yıldız Siber Topluluğu",
+    type: "zirve",
+  },
+  {
+    name: "Ytü Blockchain Zirvesi",
+    date: "2.dönem",
+    location: "Ytü Davutpaşa Kampüsü Tarihi Hamam",
+    by: "Mint - Ytü Blockchain Topluluğu",
+    type: "zirve",
+  },
+];

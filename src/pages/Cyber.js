@@ -6,7 +6,7 @@ import Upcoming from "../components/Upcoming";
 import Sponsorships from "../components/Sponsorships";
 import ReachUs from "../components/ReachUs";
 import Members from "../components/Members";
-import { aiContent } from "../contents/Contents";
+import { cyberContent } from "../contents/Contents";
 import UpDivider from "../ui/UpDivider";
 
 const Ai = () => {
@@ -15,46 +15,46 @@ const Ai = () => {
       <Navbar />
 
       <DetailBundle
-        background={aiContent.bundle.background}
-        logo={aiContent.bundle.logo}
-        title={aiContent.bundle.title}
-        sponsorships={aiContent.sponsorships}
+        background={cyberContent.bundle.background}
+        logo={cyberContent.bundle.logo}
+        title={cyberContent.bundle.title}
+        sponsorships={cyberContent.sponsorships}
       />
 
       <UpDivider text="HAKKIMIZDA" />
 
       <AboutUs
-        aboutUs={aiContent.aboutUs.aboutUs}
-        mission={aiContent.aboutUs.mission}
-        vission={aiContent.aboutUs.vission}
-        image1={aiContent.aboutUsImages[0]}
-        image2={aiContent.aboutUsImages[1]}
+        aboutUs={cyberContent.aboutUs.aboutUs}
+        mission={cyberContent.aboutUs.mission}
+        vission={cyberContent.aboutUs.vission}
+        image1={cyberContent.aboutUsImages[0]}
+        image2={cyberContent.aboutUsImages[1]}
       />
 
       <Upcoming
         title="ETKİNLİKLER VE YARIŞMALAR"
-        achievements={aiContent.achievements.achievements}
-        image1={aiContent.achievementsImages[0]}
+        achievements={cyberContent.achievements.achievements}
+        image1={cyberContent.achievementsImages[0]}
       />
 
-      <Sponsorships sponsorships={aiContent.sponsorships} />
+      <Sponsorships sponsorships={cyberContent.sponsorships} />
 
       <Members
         title="YÖNETİM KURULUMUZ"
-        members={aiContent.teamMembers.teamMembers}
-        image1={aiContent.teamMembersImages[0]}
-        image2={aiContent.teamMembersImages[1]}
-        image3={aiContent.teamMembersImages[2]}
+        members={cyberContent.teamMembers.teamMembers}
+        image1={cyberContent.teamMembersImages[0]}
+        image2={cyberContent.teamMembersImages[1]}
+        image3={cyberContent.teamMembersImages[2]}
       />
 
       <ReachUs
-        linkedin={aiContent.links.linkedin}
-        twitter={aiContent.links.twitter}
-        instagram={aiContent.links.instagram}
-        youtube={aiContent.links.youtube}
-        mail={aiContent.links.mail}
-        member={aiContent.links.member}
-        sponsorship={aiContent.links.sponsorship}
+        linkedin={cyberContent.links.linkedin}
+        twitter={cyberContent.links.twitter}
+        instagram={cyberContent.links.instagram}
+        youtube={cyberContent.links.youtube}
+        mail={cyberContent.links.mail}
+        member={cyberContent.links.member}
+        sponsorship={cyberContent.links.sponsorship}
       />
     </>
   );

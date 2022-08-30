@@ -1,8 +1,12 @@
 import React from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import ReachUs from "../components/ReachUs";
-import { homeContent } from "../contents/Contents";
+import { eventsData, homeContent } from "../contents/Contents";
+import EventCard from "../ui/EventCard";
+import JuniorProjectInfo from "../assets/JuniorProjectInfo.png";
+import RotatableImage from "../ui/RotatableImage";
 
 const EventsContainer = styled.div`
   width: 100%;
@@ -22,11 +26,9 @@ const EventOptions = styled.div`
   display: flex;
 `;
 
-const EventOption = styled.div`
-  background-color: transparent;
+const EventOption = styled.button`
   border-style: solid;
   border-width: 3px;
-  border-color: black;
   box-shadow: 10px -10px 0 -3px black;
   padding: 10px 20px 10px 20px;
   width: fit-content;
@@ -36,118 +38,258 @@ const EventOption = styled.div`
     left: 10px;
     box-shadow: 0 0 0 -3px white;
   }
+
+  // background-color: ${(props) => (props.active ? "black" : "transparent")};
+  // border-color: ${(props) => (props.active ? "white" : "black")};
+  // color: ${(props) => (props.active ? "white" : "black")};
+  transform: ${(props) =>
+    props.active ? "translateY(0);" : "translateY(10px);"};
 `;
 
-const EventItemContainer = styled.div`
-  width: 550px;
-  min-height: 20vh;
-  height: fit-content;
-  border: solid 3px black;
-  background: tranparent;
+const EventsPart = styled.div`
   display: flex;
+  justify-content: space-evenly;
 `;
 
-const EventItemType = styled.div`
-  font-size: 20px;
-  width: 10%;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  background-color: #aacfd0;
-  padding: 2%;
-  display: flex;
-  font-family: Russo One;
-  justify-content: center;
-`;
-
-const EventItemInfos = styled.div`
+const EventImages1 = styled.div`
+  width: 25%;
+  padding-left: 5vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 90%;
-
-  div,
-  a {
-    border-bottom: solid 3px black;
-    padding: 5px 20px 5px 20px;
-    font-family: Russo One;
-    :last-child {
-      border-bottom: none;
-    }
-  }
+  gap: 5vh;
 `;
 
-const EventItemName = styled.div`
-  font-size: 30px;
-  font-weight: 900;
+const EventImages2 = styled.div`
+  width: 25%;
+  padding-right: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
 `;
 
-const EventItemBy = styled.div`
-  font-size: 25px;
-`;
-
-const EventItemLocation = styled.div`
-  font-size: 20px;
-`;
-
-const EventItemDate = styled.div`
-  font-size: 20px;
-`;
-const EventItemButton = styled.a`
-  font-size: 25px;
-  color: red;
-  background: #aacfd0;
-  text-align: right;
-  cursor: pointer;
-`;
 const Events = () => {
+  // const [eventType, setEventType] = useState([
+  //   "summit",
+  //   "workshop",
+  //   "competition",
+  //   "meetup",
+  // ]);
+
+  // function handleShowEvents() {
+  //   setEventType([]);
+  //   setEventType([["summit", "workshop", "competition", "meetup"]]);
+  // }
+  // function handleShowSummits() {
+  //   setEventType([]);
+  //   setEventType(["summit"]);
+  // }
+  // function handleShowWorkshops() {
+  //   setEventType([]);
+  //   setEventType(["workshop"]);
+  // }
+  // function handleShowCompetitions() {
+  //   setEventType([]);
+  //   setEventType(["competition"]);
+  // }
+  // function handleShowMeetUps() {
+  //   setEventType([]);
+  //   setEventType(["meetup"]);
+  // }
+
+  const [showSummits, setShowSummits] = useState(true);
+  const [showWorkshops, setShowWorkshops] = useState(true);
+  const [showCompetitions, setShowCompetitions] = useState(true);
+  const [showMeetUps, setShowMeetUps] = useState(true);
+  const [isAllActive, setIsAllActive] = useState(true);
+  const [isSummitsActive, setIsSummitsActive] = useState(false);
+  const [isWorkshopActive, setIsWorkshopActive] = useState(false);
+  const [isCompetitionActive, setIsCompetitionActive] = useState(false);
+  const [isMeetupActive, setIsMeetupActive] = useState(false);
+
+  function handleShowEvents() {
+    setShowSummits(true);
+    setShowWorkshops(true);
+    setShowCompetitions(true);
+    setShowMeetUps(true);
+
+    setIsAllActive(true);
+    setIsSummitsActive(false);
+    setIsWorkshopActive(false);
+    setIsCompetitionActive(false);
+    setIsMeetupActive(false);
+  }
+  function handleShowSummits() {
+    setShowSummits(true);
+    setShowWorkshops(false);
+    setShowCompetitions(false);
+    setShowMeetUps(false);
+
+    setIsAllActive(false);
+    setIsSummitsActive(true);
+    setIsWorkshopActive(false);
+    setIsCompetitionActive(false);
+    setIsMeetupActive(false);
+  }
+  function handleShowWorkshops() {
+    setShowSummits(false);
+    setShowWorkshops(true);
+    setShowCompetitions(false);
+    setShowMeetUps(false);
+
+    setIsAllActive(false);
+    setIsSummitsActive(false);
+    setIsWorkshopActive(true);
+    setIsCompetitionActive(false);
+    setIsMeetupActive(false);
+  }
+  function handleShowCompetitions() {
+    setShowSummits(false);
+    setShowWorkshops(false);
+    setShowCompetitions(true);
+    setShowMeetUps(false);
+
+    setIsAllActive(false);
+    setIsSummitsActive(false);
+    setIsWorkshopActive(false);
+    setIsCompetitionActive(true);
+    setIsMeetupActive(false);
+  }
+  function handleShowMeetUps() {
+    setShowSummits(false);
+    setShowWorkshops(false);
+    setShowCompetitions(false);
+    setShowMeetUps(true);
+
+    setIsAllActive(false);
+    setIsSummitsActive(false);
+    setIsWorkshopActive(false);
+    setIsCompetitionActive(false);
+    setIsMeetupActive(true);
+  }
   return (
     <>
       <Navbar />
       <EventsContainer>
         <EventHeader> Yaklasan Etkinliklerimiz</EventHeader>
         <EventOptions>
-          <EventOption>Tumu</EventOption>
-          <EventOption>Zirveler</EventOption>
-          <EventOption>Egitimler</EventOption>
-          <EventOption>Yarismalar</EventOption>
-          <EventOption>Bulusmalar</EventOption>
+          <EventOption onClick={handleShowEvents} active={isAllActive}>
+            Tumu
+          </EventOption>
+          <EventOption onClick={handleShowSummits} active={isSummitsActive}>
+            Zirveler
+          </EventOption>
+          <EventOption onClick={handleShowWorkshops} active={isWorkshopActive}>
+            Egitimler
+          </EventOption>
+          <EventOption
+            onClick={handleShowCompetitions}
+            active={isCompetitionActive}
+          >
+            Yarismalar
+          </EventOption>
+          <EventOption onClick={handleShowMeetUps} active={isMeetupActive}>
+            Bulusmalar
+          </EventOption>
         </EventOptions>
-        <EventItemContainer>
-          <EventItemType>Bulusma</EventItemType>
-          <EventItemInfos>
-            <EventItemName>Yildiz Yazilim Zirvesi</EventItemName>
-            <EventItemBy>Mint</EventItemBy>
-            <EventItemLocation>
-              Ytu Davutpasa Kampusu Tarihi Hamam
-            </EventItemLocation>
-            <EventItemDate>25-26-27 Ekim 2022</EventItemDate>
-            <EventItemButton>Hemen Başvur</EventItemButton>
-          </EventItemInfos>
-        </EventItemContainer>
-        <EventItemContainer>
-          <EventItemType>Bulusma</EventItemType>
-          <EventItemInfos>
-            <EventItemName>Yildiz Yazilim Zirvesi</EventItemName>
-            <EventItemBy>Mint</EventItemBy>
-            <EventItemLocation>
-              Ytu Davutpasa Kampusu Tarihi Hamam
-            </EventItemLocation>
-            <EventItemDate>25-26-27 Ekim 2022</EventItemDate>
-            <EventItemButton>Hemen Başvur</EventItemButton>
-          </EventItemInfos>
-        </EventItemContainer>
-        <EventItemContainer>
-          <EventItemType>Bulusma</EventItemType>
-          <EventItemInfos>
-            <EventItemName>Yildiz Yazilim Zirvesi</EventItemName>
-            <EventItemBy>Mint</EventItemBy>
-            <EventItemLocation>
-              Ytu Davutpasa Kampusu Tarihi Hamam
-            </EventItemLocation>
-            <EventItemDate>25-26-27 Ekim 2022</EventItemDate>
-            <EventItemButton>Hemen Başvur</EventItemButton>
-          </EventItemInfos>
-        </EventItemContainer>
+        <EventsPart>
+          <EventImages1>
+            <RotatableImage
+              rotate={true}
+              src={JuniorProjectInfo}
+              alt="mint-etkinlik-afişi"
+              width={100}
+            />
+            <RotatableImage
+              rotate={false}
+              src={JuniorProjectInfo}
+              alt="mint-etkinlik-afişi"
+              width={100}
+            />
+          </EventImages1>
+          {/* {eventsData.map((event) =>
+          eventType.include(event.type.toLowerCase()) ? (
+            <EventItemContainer key={event.date}>
+              <EventItemType>{event.type}</EventItemType>
+              <EventItemInfos>
+                <EventItemName>{event.name}</EventItemName>
+                <EventItemBy>{event.by}</EventItemBy>
+                <EventItemLocation>{event.location}</EventItemLocation>
+                <EventItemDate>{event.date}</EventItemDate>
+                <EventItemButton>Hemen Başvur</EventItemButton>
+              </EventItemInfos>
+            </EventItemContainer>
+          ) : null
+        )} */}
+          {showSummits && showWorkshops && showCompetitions && showMeetUps ? (
+            <EventsContainer>
+              {eventsData.map((event) => (
+                <EventCard key={event.date} event={event} />
+              ))}
+            </EventsContainer>
+          ) : null}
+          {showSummits &&
+          !showWorkshops &&
+          !showCompetitions &&
+          !showMeetUps ? (
+            <EventsContainer>
+              {eventsData.map((event) =>
+                event.type == "zirve" ? (
+                  <EventCard key={event.date} event={event} />
+                ) : null
+              )}
+            </EventsContainer>
+          ) : null}
+          {!showSummits &&
+          showWorkshops &&
+          !showCompetitions &&
+          !showMeetUps ? (
+            <EventsContainer>
+              {eventsData.map((event) =>
+                event.type == "eğitim" ? (
+                  <EventCard key={event.date} event={event} />
+                ) : null
+              )}
+            </EventsContainer>
+          ) : null}
+          {!showSummits &&
+          !showWorkshops &&
+          showCompetitions &&
+          !showMeetUps ? (
+            <EventsContainer>
+              {eventsData.map((event) =>
+                event.type == "yarışma" ? (
+                  <EventCard key={event.date} event={event} />
+                ) : null
+              )}
+            </EventsContainer>
+          ) : null}
+          {!showSummits &&
+          !showWorkshops &&
+          !showCompetitions &&
+          showMeetUps ? (
+            <EventsContainer>
+              {eventsData.map((event) =>
+                event.type == "buluşma" ? (
+                  <EventCard key={event.date} event={event} />
+                ) : null
+              )}
+            </EventsContainer>
+          ) : null}
+          <EventImages2>
+            <RotatableImage
+              rotate={false}
+              src={JuniorProjectInfo}
+              alt="mint-etkinlik-afişi"
+              width={100}
+            />
+            <RotatableImage
+              rotate={true}
+              src={JuniorProjectInfo}
+              alt="mint-etkinlik-afişi"
+              width={100}
+            />
+          </EventImages2>
+        </EventsPart>
         <ReachUs
           linkedin={homeContent.links.linkedin}
           twitter={homeContent.links.twitter}
