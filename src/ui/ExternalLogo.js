@@ -15,7 +15,7 @@ const ExternalLogoImage = styled.img`
 `;
 const ExternalLogo = ({ src, alt, width, linkTo }) => {
   return (
-    <ExternalLogoContainer width={width} href={linkTo}>
+    <ExternalLogoContainer width={width} href={linkTo} target="__blank">
       <ExternalLogoImage src={src} alt={alt} />
     </ExternalLogoContainer>
   );

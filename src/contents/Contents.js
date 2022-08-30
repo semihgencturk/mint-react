@@ -13,6 +13,12 @@ import BundleBackground from "../assets/BundleBackground.jpg";
 import KodluyoruzLogo from "../assets/KodluyoruzLogo.png";
 import JuniorProjectInfo from "../assets/JuniorProjectInfo.png";
 import AiLogo from "../assets/AiLogo.jpeg";
+import BilimSenligiLogo from "../assets/mintSponsorships/BilimSenligiLogo.png";
+import KampusEtkinlikleriLogo from "../assets/mintSponsorships/KampusEtkinlikleriLogo.png";
+import UniverlistLogo from "../assets/mintSponsorships/UniverlistLogo.svg";
+import WebteknoLogo from "../assets/mintSponsorships/WebteknoLogo.png";
+import AjansKurduLogo from "../assets/mintSponsorships/AjansKurduLogo.webp";
+import IsKulubuLogo from "../assets/mintSponsorships/IsKulubuLogo.png";
 
 export const homeContent = {
   bundle: {
@@ -68,20 +74,29 @@ export const homeContent = {
 
   members: {
     members: [
-      { name: "Melike Sude Ceylan - Başkan", href: "https://github.com/" },
+      {
+        name: "Melike Sude Ceylan - Başkan",
+        href: "https://www.linkedin.com/in/melike-sude-ceylan-a1a7991b4/",
+      },
       {
         name: "İrfan Ege Yılmaz - Başkan Yardımcısı",
-        href: "https://github.com/",
+        href: "https://www.linkedin.com/in/irfan-ege-y%C4%B1lmaz-657923225/",
       },
       {
         name: "Semih Gençtürk - Başkan Yardımcısı",
-        href: "https://github.com/",
+        href: "https://www.linkedin.com/in/semihgencturk/",
       },
-      { name: "Seray Güler - Kulüp Sekreteri", href: "https://github.com/" },
-      { name: "Umut Para - Sayman", href: "https://github.com/" },
+      {
+        name: "Seray Güler - Kulüp Sekreteri",
+        href: "https://www.linkedin.com/in/serayguler/",
+      },
+      {
+        name: "Umut Bal - Sayman",
+        href: "https://www.linkedin.com/in/umutbal/",
+      },
       {
         name: "Yusuf Yılmaz - Network Birim Koordinatörü",
-        href: "https://github.com/",
+        href: "https://www.linkedin.com/in/yusuf-yilmaz0/",
       },
       {
         name: "Ergin Can Muaf - Eğitim Birimi Koordinatörü",
@@ -93,19 +108,19 @@ export const homeContent = {
       },
       {
         name: "Ayçanur Betül Çelebi - Medya Birimi Koordinatörü",
-        href: "https://github.com/",
+        href: "https://www.linkedin.com/in/aycanurbetulcelebi",
       },
       {
         name: "Eren Çibuk - Medya Birimi Koordinatörü",
-        href: "https://github.com/",
+        href: "https://www.linkedin.com/in/eren-%C3%A7%C4%B1buk-883333198/",
       },
       {
-        name: "Asiye Asiye - Proje Birimi Koordinatörü",
-        href: "https://github.com/",
+        name: "Asiye Öztürk - Proje Birimi Koordinatörü",
+        href: "https://www.linkedin.com/in/asiye-%C3%B6zt%C3%BCrk-274b8421b",
       },
       {
         name: "Batuhan Can Madenci - Proje Birimi Koordinatörü",
-        href: "https://github.com/",
+        href: "https://www.linkedin.com/in/madencibatuhan/",
       },
     ],
   },
@@ -117,10 +132,10 @@ export const homeContent = {
   ],
 
   links: {
-    linkedin: "https://github.com/",
-    twitter: "https://github.com/",
-    instagram: "https://github.com/",
-    youtube: "https://github.com/",
+    linkedin: "https://www.linkedin.com/company/ytumint/",
+    twitter: "https://twitter.com/ytumint",
+    instagram: "https://www.instagram.com/ytumint/",
+    youtube: "https://www.youtube.com/channel/UCpDavx79w9XLd2WJuyjw5rg",
     mail: "mintunity@gmail.com",
     member: "https://github.com/",
     sponsorship: "https://github.com/",
@@ -129,19 +144,16 @@ export const homeContent = {
   sponsorships: [
     { src: `${YtuLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
     { src: `${KodluyoruzLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${AuroraLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${BlockchainLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${DataScienceLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${CyberLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${YtuLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${KodluyoruzLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${AuroraLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${BlockchainLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${DataScienceLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${CyberLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${YtuLogo}`, alt: "Yildiz-Teknik-Universitesi-Logo" },
-    { src: `${KodluyoruzLogo}`, alt: "Kodluyoruz-Logo" },
-    { src: `${AuroraLogo}`, alt: "Kodluyoruz-Logo" },
+    { src: `${BilimSenligiLogo}`, alt: "Bilim-Senligi-Logo" },
+    { src: `${KampusEtkinlikleriLogo}`, alt: "Kampus-Etkinlikleri-Logo" },
+    { src: `${UniverlistLogo}`, alt: "Univerlist-Logo" },
+    { src: `${WebteknoLogo}`, alt: "Webtekno-Logo", linkTo: "IsKulubuLogo" },
+    {
+      src: `${AjansKurduLogo}`,
+      alt: "Ajans-Kurdu-Logo",
+      linkTo: "https://ajanskurdu.com/",
+    },
+    { src: `${IsKulubuLogo}`, alt: "Is-Kulubu-Logo", linkTo: "" },
   ],
 };
 
@@ -337,6 +349,7 @@ export const dataScienceContent = {
     sponsorship: "https://github.com/",
   },
 };
+
 export const cyberContent = {
   bundle: {
     background: {
@@ -453,6 +466,7 @@ export const cyberContent = {
     sponsorship: "https://github.com/",
   },
 };
+
 export const blockchainContent = {
   bundle: {
     background: {
@@ -569,6 +583,7 @@ export const blockchainContent = {
     sponsorship: "https://github.com/",
   },
 };
+
 export const aiContent = {
   bundle: {
     background: {

@@ -49,7 +49,7 @@ const Sponsorships = ({ sponsorships }) => {
   return (
     <SponsorshipsContainer>
       <AchievementsBox>
-        <AchievementBoxHeader>SPONSORLARIMIZ</AchievementBoxHeader>
+        <AchievementBoxHeader>PARTNERLERİMİZ</AchievementBoxHeader>
         <SponsorshipsList>
           {sponsorships.map((item) => (
             <ExternalLogo
@@ -57,6 +57,7 @@ const Sponsorships = ({ sponsorships }) => {
               src={item.src}
               alt={item.alt}
               width="7"
+              linkTo={item.linkTo}
             />
           ))}
         </SponsorshipsList>
