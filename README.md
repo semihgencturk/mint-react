@@ -11,7 +11,7 @@
 ## Used Technologies
 - React and styled-components for css. 
 - The icons from [Font Awesome](https://fontawesome.com/)
-- The font families from [Google Fonts](https://fonts.google.com). I used Russo One and Manrope.
+- The font families from [Google Fonts](https://fonts.google.com). Russo One and Manrope are used.
 
 ## Here Some Screenshots From The Project
 
