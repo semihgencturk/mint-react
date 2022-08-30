@@ -9,7 +9,7 @@
 - I designed this website with [Eren Çibuk](https://www.linkedin.com/in/eren-%C3%A7%C4%B1buk-883333198) and [Ayçanur Betül Çelebi](https://www.linkedin.com/in/aycanurbetulcelebi). Also I would like to thank [Cevahir Sena Esenboğa](https://github.com/csenaesenboga) and [Yusuf Yılmaz](https://www.linkedin.com/in/yusuf-yilmaz0/) for their valuable comments.
 
 ## Used Technologies
-- React and styled-components for css. 
+- React and styled-components for css.  
 - The icons from [Font Awesome](https://fontawesome.com/)
 - The font families from [Google Fonts](https://fonts.google.com). Russo One and Manrope are used.
 
