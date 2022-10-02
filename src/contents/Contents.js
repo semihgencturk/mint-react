@@ -2,13 +2,22 @@ import MintPhoto1 from "../assets/MintPhoto1.png";
 import AstridLogo from "../assets/AstridLogo.png";
 import AstridTeamPhoto1 from "../assets/AstridTeamPhoto1.jpeg";
 import AstridTeamPhoto2 from "../assets/AstridTeamPhoto2.jpeg";
+// import AstridTeamPhoto3 from "../assets/AstridTeamPhoto3.jpeg";
+// import AstridTeamPhoto4 from "../assets/AstridTeamPhoto4.jpeg";
+import AstridTeamPhoto5 from "../assets/AstridTeamPhoto5.png";
+import auroraTeamPhoto1 from "../assets/auroraTeamPhoto1.jpg";
+import auroraTeamPhoto2 from "../assets/auroraTeamPhoto2.jpg";
+// import auroraTeamPhoto3 from "../assets/auroraTeamPhoto3.jpg";
+import auroraTeamPhoto4 from "../assets/auroraTeamPhoto4.jpg";
+import auroraTeamPhoto5 from "../assets/auroraTeamPhoto5.jpg";
+import auroraTeamPhoto6 from "../assets/auroraTeamPhoto6.jpg";
 import YtuLogo from "../assets/YtuLogo.png";
 import TeknofestPhoto1 from "../assets/TeknofestPhoto1.jpg";
 import AuroraLogo from "../assets/AuroraLogo.png";
 import BlockchainLogo from "../assets/BlockchainLogo.png";
 import CyberLogo from "../assets/CyberLogo.png";
 import DataScienceLogo from "../assets/DataScienceLogo.png";
-import MintGreenLogo from "../assets/MintGreenLogo.png";
+// import MintGreenLogo from "../assets/MintGreenLogo.png";
 import BundleBackground from "../assets/BundleBackground.jpg";
 import KodluyoruzLogo from "../assets/KodluyoruzLogo.png";
 import JuniorProjectInfo from "../assets/JuniorProjectInfo.png";
@@ -20,6 +29,17 @@ import WebteknoLogo from "../assets/WebteknoLogo.png";
 import AjansKurduLogo from "../assets/AjansKurduLogo.webp";
 import IsKulubuLogo from "../assets/IsKulubuLogo.png";
 import AstridGreenLogo from "../assets/AstridGreenLogo.png";
+import adastecLogo from "../assets/AstridSponsorhips/adastecLogo.png";
+import altcointurkLogo from "../assets/AstridSponsorhips/altcointurkLogo.png";
+// import biasLogo from "../assets/AstridSponsorhips/biasLogo.svg";
+import borusanMannesmannLogo from "../assets/AstridSponsorhips/borusanMannesmannLogo.png";
+import burcmpcLogo from "../assets/AstridSponsorhips/burcmpcLogo.png";
+import gsbLogo from "../assets/AstridSponsorhips/gsbLogo.png";
+import klothoLogo from "../assets/AstridSponsorhips/klothoLogo.jpeg";
+import odakpcbLogo from "../assets/AstridSponsorhips/odakpcbLogo.png";
+import turkiyeninMakinecileriLogo from "../assets/AstridSponsorhips/turkiyeninMakinecileriLogo.png";
+import ytuPrototipLogo from "../assets/AstridSponsorhips/ytuPrototipLogo.jpeg";
+import MintWeekends from "../assets/mintWeekends.png";
 
 export const homeContent = {
   bundle: {
@@ -51,26 +71,35 @@ export const homeContent = {
   upcoming: {
     upcoming: [
       {
-        name: "Yıldız Yazılım Zirvesi / 25-26-27 EKİM",
-        href: "https://github.com/",
+        name: "Tanışma Kahvaltısı / 16 Ekim 2022",
+        href: "/Etkinlikler",
+      },
+      {
+        name: "Mint Weekends / Her Hafta Sonu",
+        href: "/Etkinlikler",
+      },
+      {
+        name: "Yıldız Yazılım Zirvesi / 6-7-8 Aralık",
+        href: "/Etkinlikler",
       },
       {
         name: "Ytü Yapay Zeka ve Veri Bilimi Zirvesi / 2023 İlkbahar",
-        href: "https://github.com/",
+        href: "/Etkinlikler",
       },
       {
         name: "Yıldız Siber Güvenlik Zirvesi / 2023 İlkbahar",
-        href: "https://github.com/",
+        href: "/Etkinlikler",
       },
       {
         name: "Ytü Blockchain Zirvesi / 2023 İlkbahar",
-        href: "https://github.com/",
+        href: "/Etkinlikler",
       },
     ],
   },
 
   upcomingImages: [
     { src: `${JuniorProjectInfo}`, alt: "Mint-Etkinlik-Görseli" },
+    { src: `${MintWeekends}`, alt: "Mint-Etkinlik-Görseli" },
   ],
 
   members: {
@@ -105,7 +134,7 @@ export const homeContent = {
       },
       {
         name: "Eren Şükrü Kür - Eğitim Birimi Koordinatörü",
-        href: "https://github.com/",
+        href: "https://www.linkedin.com/in/eren-k%C3%BCr-00160a1b7",
       },
       {
         name: "Ayçanur Betül Çelebi - Medya Birimi Koordinatörü",
@@ -138,8 +167,8 @@ export const homeContent = {
     instagram: "https://www.instagram.com/ytumint/",
     youtube: "https://www.youtube.com/channel/UCpDavx79w9XLd2WJuyjw5rg",
     mail: "mintunity@gmail.com",
-    member: "https://github.com/",
-    sponsorship: "https://github.com/",
+    member: "https://forms.gle/uk81DDej4Rm23EXu5",
+    sponsorship: "https://forms.gle/UET4gy7tft32sXoi9",
   },
 
   sponsorships: [
@@ -251,15 +280,15 @@ export const communityContent = [
     },
     to: "/Topluluklar/Ytu-Blockchain",
   },
-  {
-    title: "MİNT YAPAY ZEKA ÇALIŞMA GRUBU",
-    logo: {
-      src: `${MintGreenLogo}`,
-      alt: "mint-yapay-zeka-logo",
-      linkTo: "/Topluluklar/Mint-Yapay-Zeka",
-    },
-    to: "/Topluluklar/Mint-Yapay-Zeka",
-  },
+  // {
+  //   title: "MİNT YAPAY ZEKA ÇALIŞMA GRUBU",
+  //   logo: {
+  //     src: `${AiLogo}`,
+  //     alt: "mint-yapay-zeka-logo",
+  //     linkTo: "/Topluluklar/Mint-Yapay-Zeka",
+  //   },
+  //   to: "/Topluluklar/Mint-Yapay-Zeka",
+  // },
 ];
 
 export const dataScienceContent = {
@@ -364,9 +393,9 @@ export const dataScienceContent = {
   ],
 
   sponsorships: [
-    { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
-    { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
-    { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
+    // { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
+    // { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
+    // { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
   ],
 
   links: {
@@ -482,8 +511,8 @@ export const cyberContent = {
   ],
 
   sponsorships: [
-    { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
-    { src: `${YtuLogo}`, alt: "ss", linkTo: "" },
+    // { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
+    // { src: `${YtuLogo}`, alt: "ss", linkTo: "" },
   ],
 
   links: {
@@ -599,8 +628,8 @@ export const blockchainContent = {
   ],
 
   sponsorships: [
-    { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
-    { src: `${YtuLogo}`, alt: "ss", linkTo: "" },
+    // { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
+    // { src: `${YtuLogo}`, alt: "ss", linkTo: "" },
   ],
 
   links: {
@@ -768,7 +797,7 @@ export const astridContent = {
 
   aboutUs: {
     aboutUs:
-      "YTÜ-Astrid Otonom Takımı, Ekim 2020’de farklı mühendislik disiplinleri üzerine çalışan üniversite öğrencileri tarafından kurulan bir proje takımıdır.Takımımız “mobilite özellikler taşıyan otonom sistemler” üzerine çalışmaktadır ve süregelen teorik eğitimlerimizdeki öğretileri uygulamalı olarak hayata geçirmeyi hedeflemektedir.",
+      "Astrid Otonom Takımı, 2020 yılında kurulmuş olup, YTÜ-MİNT Kulübü bünyesinde otonom tabanlı mobililite projeleri geliştirmektedir. Kara taşıtı dinamiği, otonom sürüş ve robotik kontrol başlıca çalışma alanlarıdır.",
     mission:
       "Geliştirdiğimiz araçlar ve katıldığımız yarışlar ile otonom sistemlerin yaygınlaşmasını sağlamak, bu amaç ile üniversite – sanayi işbirliği çerçevesinde şirket destekleri alarak daha büyük ve ses getirecek projelere imza atmaktır. Yapmış olduğumuz çalışmalar her ne kadar teknik projeler olsa da aynı zamanda bizim için sosyal sorumluluktur. Öğrendiğimiz her bilgiyi paylaşmak hepimizin ortak paydasıdır.",
     vission:
@@ -783,20 +812,16 @@ export const astridContent = {
   achievements: {
     achievements: [
       {
-        name: "Yıldız Yazılım Zirvesi / 25-26-27 EKİM",
-        href: "https://github.com/",
+        name: "Teknofest 2023 - Hazırlanılıyor",
+        href: "https://www.teknofest.org/tr/",
       },
       {
-        name: "Ytü Yapay Zeka ve Veri Bilimi Zirvesi / 2023 İlkbahar",
-        href: "https://github.com/",
+        name: "Teknofest 2022 - KTR Aşaması",
+        href: "https://www.teknofest.org/tr/",
       },
       {
-        name: "Yıldız Siber Güvenlik Zirvesi / 2023 İlkbahar",
-        href: "https://github.com/",
-      },
-      {
-        name: "Ytü Blockchain Zirvesi / 2023 İlkbahar",
-        href: "https://github.com/",
+        name: "Teknofest 2021 - ÖTR Aşaması",
+        href: "https://www.teknofest.org/tr/",
       },
     ],
   },
@@ -805,44 +830,45 @@ export const astridContent = {
 
   teamMembers: {
     teamMembers: [
-      { name: "Melike Sude Ceylan - Başkan", href: "https://github.com/" },
       {
-        name: "İrfan Ege Yılmaz - Başkan Yardımcısı",
-        href: "https://github.com/",
+        name: "Asst. Prof. Ertuğrul Bayraktar - Danışman",
+        href: "https://avesis.yildiz.edu.tr/eb",
       },
       {
-        name: "Semih Gençtürk - Başkan Yardımcısı",
-        href: "https://github.com/",
-      },
-      { name: "Seray Güler - Kulüp Sekreteri", href: "https://github.com/" },
-      { name: "Umut Para - Sayman", href: "https://github.com/" },
-      {
-        name: "Yusuf Yılmaz - Network Birim Koordinatörü",
-        href: "https://github.com/",
+        name: "Muvahhid Kılıç - Kaptan",
+        href: "https://www.linkedin.com/in/muvahhidkilic/",
       },
       {
-        name: "Ergin Can Muaf - Eğitim Birimi Koordinatörü",
-        href: "https://github.com/",
+        name: "Serhat Saygı - Kaptan Yardımcısı",
+        href: "https://www.linkedin.com/in/serhat-saygi/",
       },
       {
-        name: "Eren Şükrü Kür - Eğitim Birimi Koordinatörü",
-        href: "https://github.com/",
+        name: "Batuhan Can Madenci - Mekanik Lideri",
+        href: "https://www.linkedin.com/in/madencibatuhan/",
       },
       {
-        name: "Ayçanur Betül Çelebi - Medya Birimi Koordinatörü",
-        href: "https://github.com/",
+        name: "Duygu Bilge Karaoğlu - Mekanik Üyesi",
+        href: "https://www.linkedin.com/in/duygubilgekaraoglu/",
       },
       {
-        name: "Eren Çibuk - Medya Birimi Koordinatörü",
-        href: "https://github.com/",
+        name: "Erhan Kalaman - Mekanik Üyesi",
+        href: "https://www.linkedin.com/in/erhan-kalaman-baa8501b8/",
       },
       {
-        name: "Asiye Asiye - Proje Birimi Koordinatörü",
-        href: "https://github.com/",
+        name: "Mahmut Naci Kara - Mekanik Üyesi",
+        href: "https://www.linkedin.com/in/mahmut-naci-kara-69119a196/",
       },
       {
-        name: "Batuhan Can Madenci - Proje Birimi Koordinatörü",
-        href: "https://github.com/",
+        name: "Turhan Furkan Ekiz - Mekanik Üyesi",
+        href: "https://www.linkedin.com/in/taha-yasin-kiymaz/",
+      },
+      {
+        name: "Taha Yasin Kıymaz - Elektrik Üyesi",
+        href: "https://www.linkedin.com/in/semihgencturk/",
+      },
+      {
+        name: "Semih Gençtürk - Yazılım Üyesi",
+        href: "https://www.linkedin.com/in/mahmut-naci-kara-69119a196/",
       },
     ],
   },
@@ -850,22 +876,39 @@ export const astridContent = {
   teamMembersImages: [
     { src: `${AstridTeamPhoto1}`, alt: "Astrid-Takim" },
     { src: `${AstridTeamPhoto2}`, alt: "Astrid-Takim" },
-    { src: `${AstridTeamPhoto1}`, alt: "Astrid-Takim" },
+    { src: `${AstridTeamPhoto5}`, alt: "Astrid-Takim" },
   ],
 
   sponsorships: [
-    { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
-    { src: `${YtuLogo}`, alt: "ss", linkTo: "" },
+    { src: `${adastecLogo}`, alt: "adastecLogo", linkTo: "" },
+    { src: `${altcointurkLogo}`, alt: "altcointurkLogo", linkTo: "" },
+    // { src: `${biasLogo}`, alt: "biasLogo", linkTo: "" },
+    {
+      src: `${borusanMannesmannLogo}`,
+      alt: "borusanMannesmannLogo",
+      linkTo: "",
+    },
+    { src: `${burcmpcLogo}`, alt: "burcmpcLogo", linkTo: "" },
+    { src: `${gsbLogo}`, alt: "gsbLogo", linkTo: "" },
+    { src: `${klothoLogo}`, alt: "klothoLogo", linkTo: "" },
+    { src: `${odakpcbLogo}`, alt: "odakpcbLogo", linkTo: "" },
+    {
+      src: `${turkiyeninMakinecileriLogo}`,
+      alt: "turkiyeninMakinecileriLogo",
+      linkTo: "",
+    },
+    { src: `${ytuPrototipLogo}`, alt: "ytuPrototipLogo", linkTo: "" },
   ],
 
   links: {
-    linkedin: "https://github.com/",
-    twitter: "https://github.com/",
-    instagram: "https://github.com/",
-    youtube: "https://github.com/",
+    linkedin: "https://www.linkedin.com/company/astridotonom",
+    twitter: "https://www.twitter.com/astridotonom",
+    instagram: "https://www.twitter.com/astridotonom",
+    youtube: "https://www.linkedin.com/company/astridotonom",
     mail: "astridotonom@gmail.com",
-    member: "https://github.com/",
-    sponsorship: "https://github.com/",
+    member:
+      "https://docs.google.com/forms/d/e/1FAIpQLSe07hAffipUWj2zSDmVtHOUN9hLp36Om0jhwBY_4mgeVuieUg/viewform",
+    sponsorship: "",
   },
 };
 
@@ -885,35 +928,31 @@ export const auroraContent = {
 
   aboutUs: {
     aboutUs:
-      "AURORA UAV, Yıldız Teknik Üniversitesi MİNT kulübü bünyesinde kurulmuş, insansız hava aracı sistemleri geliştirme takımıdır.",
+      "AURORA UAV, Yıldız Teknik Üniversitesi MİNT kulübü bünyesinde 2020 yılında kurulmuş, insansız hava aracı sistemleri geliştirme takımıdır. Takımın çalışmaları başlıca otonomi, görüntü işleme ve robotik sistem tasarımı üzerinedir.",
     mission:
-      "Üyeler burada kendilerini yazılım, tasarım gibi sanal alanlarda geliştirdikleri gibi, ortak amaçları paylaştıkları arkadaşlar edinirler; bu avantaj gerek öğrencilik hayatlarında gerekse meslek hayatlarında onlara kar sağlayacaktır. Üyelerden beklenen özellikler; azim, kararlılık, bilgi paylaşımı ve en önemlisi de üretkenliktir",
+      "Aurora UAV; robotik, otonomi, yapay zeka alanlarında kendini geliştirmek ve çalışmak isteyen mühendislere uygun ortam sağlamayı misyon edinmiştir.",
     vission:
-      "Ekip çalışması esastır; kararlar ortak alınır, uygulamalarda birlikte çalışılır. Demokrasi temellidir. Her üye, düşüncelerini özgürce ifade edip fikirlerini uygulamaya geçirebileceği bir ortam bulur. Ekipler arası koordinasyon en az ekiplerin kendi içlerindeki koordinasyon kadar önemlidir",
+      "Aurora UAV vizyonu; yapılan çalışmalarla var olan teknolojileri ileriye götürmek, bundan da önemlisi ekip üyelerinin yetkinlikler kazanmasına yardımcı olmaktır.",
   },
 
   aboutUsImages: [
-    { src: `${AstridTeamPhoto1}`, alt: "Astrid-Takim" },
-    { src: `${AstridTeamPhoto2}`, alt: "Astrid-Takim" },
+    { src: `${auroraTeamPhoto1}`, alt: "Aurora-Takim" },
+    { src: `${auroraTeamPhoto2}`, alt: "Aurora-Takim" },
   ],
 
   achievements: {
     achievements: [
       {
-        name: "Yıldız Yazılım Zirvesi / 25-26-27 EKİM",
-        href: "https://github.com/",
+        name: "Teknofest 2023 - Hazırlanılıyor",
+        href: "https://www.teknofest.org/tr/",
       },
       {
-        name: "Ytü Yapay Zeka ve Veri Bilimi Zirvesi / 2023 İlkbahar",
-        href: "https://github.com/",
+        name: "Teknofest 2022 - Finalist",
+        href: "https://www.teknofest.org/tr/",
       },
       {
-        name: "Yıldız Siber Güvenlik Zirvesi / 2023 İlkbahar",
-        href: "https://github.com/",
-      },
-      {
-        name: "Ytü Blockchain Zirvesi / 2023 İlkbahar",
-        href: "https://github.com/",
+        name: "Teknofest 2021 - Finalist",
+        href: "https://www.teknofest.org/tr/",
       },
     ],
   },
@@ -922,99 +961,119 @@ export const auroraContent = {
 
   teamMembers: {
     teamMembers: [
-      { name: "Melike Sude Ceylan - Başkan", href: "https://github.com/" },
       {
-        name: "İrfan Ege Yılmaz - Başkan Yardımcısı",
-        href: "https://github.com/",
+        name: "Lect. Furkan Çakmak - Danışman Hocamız",
+        href: "https://avesis.yildiz.edu.tr/fcakmak",
       },
       {
-        name: "Semih Gençtürk - Başkan Yardımcısı",
-        href: "https://github.com/",
-      },
-      { name: "Seray Güler - Kulüp Sekreteri", href: "https://github.com/" },
-      { name: "Umut Para - Sayman", href: "https://github.com/" },
-      {
-        name: "Yusuf Yılmaz - Network Birim Koordinatörü",
-        href: "https://github.com/",
+        name: "Sıdıka Vişne - Döner Kanat",
+        href: "https://www.linkedin.com/in/s%C4%B1d%C4%B1ka-vi%C5%9Fne-5141621a6/",
       },
       {
-        name: "Ergin Can Muaf - Eğitim Birimi Koordinatörü",
-        href: "https://github.com/",
+        name: "Bilal Kahraman - Döner Kanat",
+        href: "https://www.linkedin.com/in/bilalkah/?originalSubdomain=tr",
       },
       {
-        name: "Eren Şükrü Kür - Eğitim Birimi Koordinatörü",
-        href: "https://github.com/",
+        name: "Berat Kerem Sarı - Döner Kanat",
+        href: "https://www.linkedin.com/in/berat38",
       },
       {
-        name: "Ayçanur Betül Çelebi - Medya Birimi Koordinatörü",
-        href: "https://github.com/",
+        name: "Hasan Hüseyin Boyacı - Döner Kanat",
+        href: "https://www.linkedin.com/in/hasanhuseyinboyaci",
       },
       {
-        name: "Eren Çibuk - Medya Birimi Koordinatörü",
-        href: "https://github.com/",
+        name: "Anıl Kutay Uçan - Döner Kanat",
+        href: "",
       },
       {
-        name: "Asiye Asiye - Proje Birimi Koordinatörü",
-        href: "https://github.com/",
+        name: "Ayşe Konuş - Döner Kanat",
+        href: "https://www.linkedin.com/in/aysekonus",
       },
       {
-        name: "Batuhan Can Madenci - Proje Birimi Koordinatörü",
-        href: "https://github.com/",
+        name: "Emre Bali - Sabit Kanat",
+        href: "https://www.linkedin.com/in/emre-b-4811011a9",
+      },
+      {
+        name: "Meryem Koç - Sabit Kanat",
+        href: "https://www.linkedin.com/in/meryemkoc/",
+      },
+      {
+        name: "Ahmet Sefa Karakış - Sabit Kanat",
+        href: "https://www.linkedin.com/in/ahmetsefakarakis",
+      },
+      {
+        name: "Kerem Can Melemen - Sabit Kanat",
+        href: "https://www.linkedin.com/in/kerem-can-melemen",
+      },
+      {
+        name: "Merve Arslan - Sabit Kanat",
+        href: "https://www.linkedin.com/in/merveearslan",
+      },
+      {
+        name: "Ahmet Akib Gültekin - Sabit Kanat",
+        href: "https://www.linkedin.com/in/ahmet-akib-g%C3%BCltekin-0184491b7",
+      },
+      {
+        name: "Muhammed Reis Topal - Sabit Kanat",
+        href: "https://www.linkedin.com/in/muhammed-reis-topal-8802bb183",
       },
     ],
   },
 
   teamMembersImages: [
-    { src: `${AstridTeamPhoto1}`, alt: "Astrid-Takim" },
-    { src: `${AstridTeamPhoto2}`, alt: "Astrid-Takim" },
-    { src: `${AstridTeamPhoto1}`, alt: "Astrid-Takim" },
+    { src: `${auroraTeamPhoto4}`, alt: "Aurora-Takim" },
+    { src: `${auroraTeamPhoto6}`, alt: "Aurora-Takim" },
+    { src: `${auroraTeamPhoto5}`, alt: "Aurora-Takim" },
   ],
 
   sponsorships: [
-    { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
-    { src: `${YtuLogo}`, alt: "ss", linkTo: "" },
+    // { src: `${YtuLogo}`, alt: "sau", linkTo: "" },
+    // { src: `${YtuLogo}`, alt: "ss", linkTo: "" },
   ],
 
   links: {
-    linkedin: "https://github.com/",
-    twitter: "https://github.com/",
-    instagram: "https://github.com/",
-    youtube: "https://github.com/",
-    mail: "astridotonom@gmail.com",
-    member: "https://github.com/",
-    sponsorship: "https://github.com/",
+    linkedin: "https://www.linkedin.com/company/aurora-uav/",
+    twitter: "https://www.instagram.com/aurorauavteam/",
+    instagram: "https://www.instagram.com/aurorauavteam/",
+    youtube:
+      "https://www.youtube.com/channel/UCH21bhsdE23UPWtXRruIi_Q/featured",
+    mail: "aurorauavteam@gmail.com",
+    member:
+      "https://docs.google.com/forms/d/e/1FAIpQLScROaq9FC5iG296jOBQOPxEFclMLxU-PfXSIqduPRk1-wXUDw/viewform",
+    sponsorship: "",
   },
 };
 
 export const eventsData = [
   {
-    name: "Yıldız Yazılım Zirvesi",
-    date: "25-26-27 Ekim 2022",
-    location: " Ytü Davutpaşa Kampüsü Tarihi Hamam",
-    by: "Mint",
-    type: "zirve",
-  },
-  {
     name: "Mint Tanışma Kahvaltısı",
-    date: "15 Ekim 2022",
-    location: "Yer Belli Değil",
+    date: "16 Ekim 2022",
+    location: "Göktürk Göleti - Esenbahçe",
     by: "Mint",
     type: "buluşma",
   },
   {
-    name: "Python Eğitimi",
-    date: "1.dönem",
-    location: "Ytü Davutpaşa Kampüsü",
+    name: "Mint Weekends",
+    date: "Her Hafta Sonu",
+    location: "Kulüpler Vadisi",
     by: "Mint",
     type: "eğitim",
   },
   {
-    name: "SQL Eğitimi",
-    date: "1.dönem",
-    location: "Ytü Davutpaşa Kampüsü",
+    name: "Yıldız Yazılım Zirvesi",
+    date: "6-7-8 Aralık 2022",
+    location: "Ytü Davutpaşa Kampüsü Tarihi Hamam",
     by: "Mint",
-    type: "eğitim",
+    type: "zirve",
   },
+
+  // {
+  //   name: "SQL Eğitimi",
+  //   date: "1.dönem",
+  //   location: "Ytü Davutpaşa Kampüsü",
+  //   by: "Mint",
+  //   type: "eğitim",
+  // },
   {
     name: "Ytü Yapay Zeka ve Veri Bilimi Zirvesi",
     date: "2.dönem",

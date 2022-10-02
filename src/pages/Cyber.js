@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import DetailBundle from "../components/DetailBundle";
-import AboutUs from "../components/AboutUs";
-import Upcoming from "../components/Upcoming";
-import Sponsorships from "../components/Sponsorships";
-import ReachUs from "../components/ReachUs";
-import Members from "../components/Members";
 import { cyberContent } from "../contents/Contents";
-import UpDivider from "../ui/UpDivider";
+// import AboutUs from "../components/AboutUs";
+// import Upcoming from "../components/Upcoming";
+// import Sponsorships from "../components/Sponsorships";
+// import ReachUs from "../components/ReachUs";
+// import Members from "../components/Members";
+// import UpDivider from "../ui/UpDivider";
 
 const Ai = () => {
   return (
@@ -21,7 +21,7 @@ const Ai = () => {
         sponsorships={cyberContent.sponsorships}
       />
 
-      <UpDivider text="HAKKIMIZDA" />
+      {/* <UpDivider text="HAKKIMIZDA" />
 
       <AboutUs
         aboutUs={cyberContent.aboutUs.aboutUs}
@@ -55,7 +55,7 @@ const Ai = () => {
         mail={cyberContent.links.mail}
         member={cyberContent.links.member}
         sponsorship={cyberContent.links.sponsorship}
-      />
+      /> */}
     </>
   );
 };

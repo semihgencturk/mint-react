@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import DetailBundle from "../components/DetailBundle";
-import Upcoming from "../components/Upcoming";
-import Sponsorships from "../components/Sponsorships";
-import ReachUs from "../components/ReachUs";
-import Members from "../components/Members";
 import { blockchainContent } from "../contents/Contents";
-import AboutUs from "../components/AboutUs";
-import UpDivider from "../ui/UpDivider";
+// import Upcoming from "../components/Upcoming";
+// import Sponsorships from "../components/Sponsorships";
+// import ReachUs from "../components/ReachUs";
+// import Members from "../components/Members";
+// import AboutUs from "../components/AboutUs";
+// import UpDivider from "../ui/UpDivider";
 
 const Ai = () => {
   return (
@@ -21,7 +21,7 @@ const Ai = () => {
         sponsorships={blockchainContent.sponsorships}
       />
 
-      <UpDivider text="HAKKIMIZDA" />
+      {/* <UpDivider text="HAKKIMIZDA" />
 
       <AboutUs
         aboutUs={blockchainContent.aboutUs.aboutUs}
@@ -55,7 +55,7 @@ const Ai = () => {
         mail={blockchainContent.links.mail}
         member={blockchainContent.links.member}
         sponsorship={blockchainContent.links.sponsorship}
-      />
+      /> */}
     </>
   );
 };

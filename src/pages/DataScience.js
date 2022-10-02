@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import DetailBundle from "../components/DetailBundle";
-import AboutUs from "../components/AboutUs";
-import Upcoming from "../components/Upcoming";
-import Sponsorships from "../components/Sponsorships";
-import ReachUs from "../components/ReachUs";
-import Members from "../components/Members";
 import { dataScienceContent } from "../contents/Contents";
-import UpDivider from "../ui/UpDivider";
+// import AboutUs from "../components/AboutUs";
+// import Upcoming from "../components/Upcoming";
+// import Sponsorships from "../components/Sponsorships";
+// import ReachUs from "../components/ReachUs";
+// import Members from "../components/Members";
+// import UpDivider from "../ui/UpDivider";
 
 const DataScience = () => {
   return (
@@ -20,7 +20,7 @@ const DataScience = () => {
         title={dataScienceContent.bundle.title}
         sponsorships={dataScienceContent.sponsorships}
       />
-
+      {/* 
       <UpDivider text="HAKKIMIZDA" />
 
       <AboutUs
@@ -55,7 +55,7 @@ const DataScience = () => {
         mail={dataScienceContent.links.mail}
         member={dataScienceContent.links.member}
         sponsorship={dataScienceContent.links.sponsorship}
-      />
+      /> */}
     </>
   );
 };

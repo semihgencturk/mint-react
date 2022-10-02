@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const InternalLogoContainer = styled.a`
   width: ${(props) => props.width && props.width}%;
-  height: fit-content;
+  height: auto;
   cursor: pointer;
   :hover {
     transform: translateY(-10px);
@@ -12,7 +12,7 @@ const InternalLogoContainer = styled.a`
 `;
 const InternalLogoImage = styled.img`
   width: 100%;
-  height: fit-content;
+  height: auto;
 `;
 const InternalLogo = ({ src, alt, width, linkTo }) => {
   return (

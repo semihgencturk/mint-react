@@ -6,6 +6,7 @@ import ReachUs from "../components/ReachUs";
 import { eventsData, homeContent } from "../contents/Contents";
 import EventCard from "../ui/EventCard";
 import JuniorProjectInfo from "../assets/JuniorProjectInfo.png";
+import MintWeekends from "../assets/mintWeekends.png";
 import RotatableImage from "../ui/RotatableImage";
 
 const EventsContainer = styled.div`
@@ -208,7 +209,7 @@ const Events = () => {
           <EventImages1>
             <RotatableImage
               rotate={true}
-              src={JuniorProjectInfo}
+              src={MintWeekends}
               alt="mint-etkinlik-afişi"
               width={100}
             />
@@ -297,7 +298,7 @@ const Events = () => {
             />
             <RotatableImage
               rotate={true}
-              src={JuniorProjectInfo}
+              src={MintWeekends}
               alt="mint-etkinlik-afişi"
               width={100}
             />

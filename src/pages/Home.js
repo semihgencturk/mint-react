@@ -47,6 +47,7 @@ const Home = () => {
         title="YAKLAŞAN ETKİNLİKLER"
         achievements={homeContent.upcoming.upcoming}
         image1={homeContent.upcomingImages[0]}
+        image2={homeContent.upcomingImages[1]}
       />
 
       {/* <InternalLinkButtonContainer backgroundColor="#aacfd0" position="center">

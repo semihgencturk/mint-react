@@ -12,7 +12,7 @@ const UpcomingContainer = styled.div`
   background: #aacfd0;
 `;
 
-const Upcoming = ({ achievements, image1, title }) => {
+const Upcoming = ({ achievements, image1, image2, title }) => {
   return (
     <UpcomingContainer>
       <RotatableImage
@@ -22,8 +22,8 @@ const Upcoming = ({ achievements, image1, title }) => {
         width="20%"
       />
       <RotatableImage
-        src={image1.src}
-        alt={image1.alt}
+        src={image2.src}
+        alt={image2.alt}
         rotate={true}
         width="20%"
       />
