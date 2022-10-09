@@ -35,6 +35,7 @@ const Astrid = () => {
         title="YARIŞMALAR"
         achievements={astridContent.achievements.achievements}
         image1={astridContent.achievementsImages[0]}
+        image2={astridContent.achievementsImages[0]}
       />
 
       <Sponsorships sponsorships={astridContent.sponsorships} />

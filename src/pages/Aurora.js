@@ -35,6 +35,7 @@ const Aurora = () => {
         title="YARIŞMALAR"
         achievements={auroraContent.achievements.achievements}
         image1={auroraContent.achievementsImages[0]}
+        image2={auroraContent.achievementsImages[0]}
       />
 
       <Sponsorships sponsorships={auroraContent.sponsorships} />
