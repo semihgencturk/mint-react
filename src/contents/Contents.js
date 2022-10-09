@@ -812,15 +812,15 @@ export const astridContent = {
   achievements: {
     achievements: [
       {
-        name: "Teknofest 2023 - Hazırlanılıyor",
+        name: "Teknofest 2023 - Mart 2023",
         href: "https://www.teknofest.org/tr/",
       },
       {
-        name: "Teknofest 2022 - KTR Aşaması",
+        name: "Teknofest 2022",
         href: "https://www.teknofest.org/tr/",
       },
       {
-        name: "Teknofest 2021 - ÖTR Aşaması",
+        name: "Teknofest 2021",
         href: "https://www.teknofest.org/tr/",
       },
     ],
