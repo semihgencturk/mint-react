@@ -42,6 +42,7 @@ const VerticalHeaderList = styled.a`
     color: #f05454;
   }
 `;
+
 const VerticalHeaderListBox = ({ title, items }) => {
   return (
     <VerticalHeaderListBoxContainer>

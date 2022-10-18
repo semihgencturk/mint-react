@@ -7,13 +7,14 @@ const InternalLogoContainer = styled.a`
   height: auto;
   cursor: pointer;
   :hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
 `;
 const InternalLogoImage = styled.img`
   width: 100%;
   height: auto;
 `;
+
 const InternalLogo = ({ src, alt, width, linkTo }) => {
   return (
     <InternalLogoContainer width={width}>

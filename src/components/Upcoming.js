@@ -12,21 +12,18 @@ const UpcomingContainer = styled.div`
   background: #aacfd0;
 `;
 
-const Upcoming = ({ achievements, image1, image2, title }) => {
+const Upcoming = ({ achievements, images, title }) => {
   return (
     <UpcomingContainer>
-      <RotatableImage
-        src={image1.src}
-        alt={image1.alt}
-        rotate={false}
-        width="20%"
-      />
-      <RotatableImage
-        src={image2.src}
-        alt={image2.alt}
-        rotate={true}
-        width="20%"
-      />
+      {images.map((image) => (
+        <RotatableImage
+          src={image.src}
+          alt={image.alt}
+          rotate={true}
+          width="15%"
+          key={image.src}
+        />
+      ))}
 
       <VerticalHeaderListBox title={title} items={achievements} />
     </UpcomingContainer>

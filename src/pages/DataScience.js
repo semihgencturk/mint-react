@@ -12,7 +12,7 @@ import { dataScienceContent } from "../contents/Contents";
 const DataScience = () => {
   return (
     <>
-      <Navbar />
+      <Navbar type="black" />
 
       <DetailBundle
         background={dataScienceContent.bundle.background}

@@ -43,7 +43,7 @@ const CommunityBackground = styled.div`
 const Community = () => {
   return (
     <>
-      <Navbar />
+      <Navbar type="white" />
       <CommunityContainer>
         <CommunityBackground
           src={CommunitiesBackground}

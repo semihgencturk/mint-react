@@ -91,8 +91,8 @@ const EventCard = ({ event }) => {
         <EventItemBy>{event.by}</EventItemBy>
         <EventItemLocation>{event.location}</EventItemLocation>
         <EventItemDate>{event.date}</EventItemDate>
-        <EventItemButton color={color(event.type)}>
-          Başvurular Yakında
+        <EventItemButton color={color(event.type)} href={event.link}>
+          {event.situation}
         </EventItemButton>
       </EventItemInfos>
     </EventItemContainer>

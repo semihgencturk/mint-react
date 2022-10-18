@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 import NavbarNonColapsableItem from "../ui/NavbarNonColapsableItem";
 import MintGreenLogo from "../assets/MintGreenLogo.png";
+import MintBlackLogo from "../assets/MintBlackLogo.png";
 import InternalLogo from "../ui/InternalLogo";
 import NavbarHamburger from "./NavbarHamburger";
 
@@ -13,7 +14,7 @@ const NavbarContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 5%;
-  background: black;
+  background: ${(props) => (props.mainNavBar ? "black" : "transparent")};
   position: sticky;
   top: 0;
   left: 0;
@@ -26,8 +27,15 @@ const NavbarContainer = styled.div`
   }
 `;
 
-const Navbar = () => {
+const Navbar = ({ type }) => {
   const [windowSize, setWindowSize] = useState(getWindowSize());
+  const [mainNavBar, setMainNavBar] = useState(false);
+
+  const navBarScrollingHandler = () => {
+    window.scrollY >= 125 ? setMainNavBar(true) : setMainNavBar(false);
+  };
+
+  window.addEventListener("scroll", navBarScrollingHandler);
 
   useEffect(() => {
     function handleWindowResize() {
@@ -46,26 +54,63 @@ const Navbar = () => {
     return { innerWidth, innerHeight };
   }
   return (
-    <NavbarContainer>
+    <NavbarContainer mainNavBar={mainNavBar}>
       {windowSize.innerWidth > 768 ? (
         <>
-          <NavbarNonColapsableItem title="Hakkımızda" linkTo="/" />
-          <NavbarNonColapsableItem title="Sponsorluk" linkTo="/Iletisim" />
-          <NavbarNonColapsableItem title="İletişim" linkTo="/Iletisim" />
+          <NavbarNonColapsableItem
+            type={mainNavBar ? "white" : type}
+            title="Hakkımızda"
+            linkTo="/"
+          />
+          <NavbarNonColapsableItem
+            type={mainNavBar ? "white" : type}
+            title="Sponsorluk"
+            linkTo="/Iletisim"
+          />
+          <NavbarNonColapsableItem
+            type={mainNavBar ? "white" : type}
+            title="İletişim"
+            linkTo="/Iletisim"
+          />
           <InternalLogo
-            src={MintGreenLogo}
+            // src={type && mainNavBar == "white" ? MintGreenLogo : MintBlackLogo}
+            src={
+              mainNavBar
+                ? MintGreenLogo
+                : type == "black"
+                ? MintBlackLogo
+                : MintGreenLogo
+            }
             alt="Ytu-Mint-Logo"
             width={5}
             linkTo="/"
           />
-          <NavbarNonColapsableItem title="Topluluklar" linkTo="/Topluluklar" />
-          <NavbarNonColapsableItem title="Takımlar" linkTo="/Takimlar" />
-          <NavbarNonColapsableItem title="Etkinlikler" linkTo="/Etkinlikler" />
+          <NavbarNonColapsableItem
+            type={mainNavBar ? "white" : type}
+            title="Topluluklar"
+            linkTo="/Topluluklar"
+          />
+          <NavbarNonColapsableItem
+            type={mainNavBar ? "white" : type}
+            title="Takımlar"
+            linkTo="/Takimlar"
+          />
+          <NavbarNonColapsableItem
+            type={mainNavBar ? "white" : type}
+            title="Etkinlikler"
+            linkTo="/Etkinlikler"
+          />
         </>
       ) : (
         <>
           <InternalLogo
-            src={MintGreenLogo}
+            src={
+              mainNavBar
+                ? MintGreenLogo
+                : type == "black"
+                ? MintBlackLogo
+                : MintGreenLogo
+            }
             alt="Ytu-Mint-Logo"
             width={windowSize.innerWidth > 500 ? "10" : "15"}
             linkTo="/"

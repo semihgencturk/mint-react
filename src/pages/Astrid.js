@@ -12,7 +12,7 @@ import UpDivider from "../ui/UpDivider";
 const Astrid = () => {
   return (
     <>
-      <Navbar />
+      <Navbar type="black" />
 
       <DetailBundle
         background={astridContent.bundle.background}
@@ -34,8 +34,7 @@ const Astrid = () => {
       <Upcoming
         title="YARIŞMALAR"
         achievements={astridContent.achievements.achievements}
-        image1={astridContent.achievementsImages[0]}
-        image2={astridContent.achievementsImages[0]}
+        images={astridContent.achievementsImages}
       />
 
       <Sponsorships sponsorships={astridContent.sponsorships} />

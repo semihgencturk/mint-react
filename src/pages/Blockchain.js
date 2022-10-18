@@ -12,7 +12,7 @@ import { blockchainContent } from "../contents/Contents";
 const Ai = () => {
   return (
     <>
-      <Navbar />
+      <Navbar type="black" />
 
       <DetailBundle
         background={blockchainContent.bundle.background}

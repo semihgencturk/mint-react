@@ -6,14 +6,18 @@ const NavbarNonColapsableItemContainer = styled.button`
   background: transparent;
   border: none;
   cursor: pointer;
-  font-size: 14px;
-  color: white;
+  font-size: 16px;
+  color: ${(props) => props.type && props.type};
+
+  :hover {
+    color: #f05454;
+  }
 `;
 
-const NavbarNonColapsableItem = ({ title, linkTo }) => {
+const NavbarNonColapsableItem = ({ type, title, linkTo }) => {
   return (
     <Link to={linkTo}>
-      <NavbarNonColapsableItemContainer>
+      <NavbarNonColapsableItemContainer type={type}>
         {title}
       </NavbarNonColapsableItemContainer>
     </Link>

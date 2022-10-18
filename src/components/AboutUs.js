@@ -9,7 +9,6 @@ const AboutUsContainer = styled.div`
   padding: 10vh 2% 10vh 2%;
   display: flex;
   flex-direction: column;
-  gap: 2vh;
 `;
 const AboutUsContainerPart = styled.div`
   display: flex;
@@ -23,14 +22,24 @@ const AboutUs = ({ aboutUs, mission, vission, image1, image2 }) => {
     <AboutUsContainer>
       <AboutUsContainerPart>
         <VerticalHeaderBox color="#E64848" title="KISACA" text={aboutUs} />
-        <RotatableImage rotate={true} src={image1.src} alt={image1.alt} />
+        <RotatableImage
+          rotate={true}
+          src={image1.src}
+          alt={image1.alt}
+          width={15}
+        />
       </AboutUsContainerPart>
       <AboutUsContainerPart>
         <VerticalHeaderBox color="#781C68" title="MİSYON" text={mission} />
       </AboutUsContainerPart>
       <AboutUsContainerPart>
         <VerticalHeaderBox color="#2B7A0B" title="VİZYON" text={vission} />
-        <RotatableImage rotate={false} src={image2.src} alt={image2.alt} />
+        <RotatableImage
+          rotate={false}
+          src={image2.src}
+          alt={image2.alt}
+          width={15}
+        />
       </AboutUsContainerPart>
     </AboutUsContainer>
   );

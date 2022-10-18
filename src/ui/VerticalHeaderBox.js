@@ -4,13 +4,19 @@ import styled from "styled-components";
 const VerticalHeaderBoxContainer = styled.div`
   width: 50%;
   height: fit-content;
-  padding: 5vh;
+  padding: 3vh;
   border-radius: 50px;
   display: flex;
   gap: 5vh;
   //   background: ${(props) => (props.color ? props.color : "#cfe8a9")};
   background: transparent;
   color: black;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    padding: 1vh;
+    gap: 4vh;
+  }
 `;
 const VerticalHeaderBoxHeaderSection = styled.div`
   width: 10%;

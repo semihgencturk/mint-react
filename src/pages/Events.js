@@ -8,6 +8,7 @@ import EventCard from "../ui/EventCard";
 import JuniorProjectInfo from "../assets/JuniorProjectInfo.png";
 import MintWeekends from "../assets/mintWeekends.png";
 import RotatableImage from "../ui/RotatableImage";
+import BreakfastBanner from "../assets/events/BreakfastBanner.png";
 
 const EventsContainer = styled.div`
   width: 100%;
@@ -182,7 +183,7 @@ const Events = () => {
   }
   return (
     <>
-      <Navbar />
+      <Navbar type="black" />
       <EventsContainer>
         <EventHeader> Yaklasan Etkinliklerimiz</EventHeader>
         <EventOptions>
@@ -292,7 +293,7 @@ const Events = () => {
           <EventImages2>
             <RotatableImage
               rotate={false}
-              src={JuniorProjectInfo}
+              src={BreakfastBanner}
               alt="mint-etkinlik-afişi"
               width={100}
             />

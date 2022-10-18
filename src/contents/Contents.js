@@ -17,10 +17,11 @@ import AuroraLogo from "../assets/AuroraLogo.png";
 import BlockchainLogo from "../assets/BlockchainLogo.png";
 import CyberLogo from "../assets/CyberLogo.png";
 import DataScienceLogo from "../assets/DataScienceLogo.png";
-// import MintGreenLogo from "../assets/MintGreenLogo.png";
+import MintGreenLogo from "../assets/MintGreenLogo.png";
 import BundleBackground from "../assets/BundleBackground.jpg";
 import KodluyoruzLogo from "../assets/KodluyoruzLogo.png";
 import JuniorProjectInfo from "../assets/JuniorProjectInfo.png";
+import BreakfastBanner from "../assets/events/BreakfastBanner.png";
 import AiLogo from "../assets/AiLogo.jpeg";
 import BilimSenligiLogo from "../assets/BilimSenligiLogo.png";
 import KampusEtkinlikleriLogo from "../assets/KampusEtkinlikleriLogo.png";
@@ -40,6 +41,11 @@ import odakpcbLogo from "../assets/AstridSponsorhips/odakpcbLogo.png";
 import turkiyeninMakinecileriLogo from "../assets/AstridSponsorhips/turkiyeninMakinecileriLogo.png";
 import ytuPrototipLogo from "../assets/AstridSponsorhips/ytuPrototipLogo.jpeg";
 import MintWeekends from "../assets/mintWeekends.png";
+import MintCommunityPhoto from "../assets/mintCommunityPhotos/MintCommunityPhoto.jpeg";
+import MintCommunityPhoto2 from "../assets/mintCommunityPhotos/MintCommunityPhoto2.jpeg";
+import MintCommunityPhoto3 from "../assets/mintCommunityPhotos/MintCommunityPhoto3.jpeg";
+import MintCommunityPhoto4 from "../assets/mintCommunityPhotos/MintCommunityPhoto4.jpeg";
+import Programming101Banner from "../assets/eventsBanners/Programming101Banner.png";
 
 export const homeContent = {
   bundle: {
@@ -64,43 +70,54 @@ export const homeContent = {
   },
 
   aboutUsImages: [
-    { src: `${MintPhoto1}`, alt: "Mint-Kulübü" },
-    { src: `${MintPhoto1}`, alt: "Mint-Kulübü" },
+    { src: `${MintCommunityPhoto}`, alt: "Mint-Kulübü" },
+    { src: `${MintCommunityPhoto2}`, alt: "Mint-Kulübü" },
   ],
 
   upcoming: {
     upcoming: [
       {
+        name: "Mint-Meet / 11 Ekim 2022",
+        href: "https://www.ytumint.com/Etkinlikler",
+      },
+      {
         name: "Tanışma Kahvaltısı / 16 Ekim 2022",
-        href: "/Etkinlikler",
+        href: "https://www.ytumint.com/Etkinlikler",
       },
       {
-        name: "Mint Weekends / Her Hafta Sonu",
-        href: "/Etkinlikler",
+        name: "Yazılım 101 / 22 Ekim 2022",
+        href: "https://www.ytumint.com/Etkinlikler",
       },
       {
-        name: "Yıldız Yazılım Zirvesi / 6-7-8 Aralık",
-        href: "/Etkinlikler",
+        name: "Yıldız Yazılım Zirvesi / 5-6 Aralık",
+        href: "https://www.ytumint.com/Etkinlikler",
       },
       {
         name: "Ytü Yapay Zeka ve Veri Bilimi Zirvesi / 2023 İlkbahar",
-        href: "/Etkinlikler",
+        href: "https://www.ytumint.com/Etkinlikler",
       },
       {
         name: "Yıldız Siber Güvenlik Zirvesi / 2023 İlkbahar",
-        href: "/Etkinlikler",
+        href: "https://www.ytumint.com/Etkinlikler",
       },
       {
         name: "Ytü Blockchain Zirvesi / 2023 İlkbahar",
-        href: "/Etkinlikler",
+        href: "https://www.ytumint.com/Etkinlikler",
       },
     ],
   },
 
   upcomingImages: [
     { src: `${JuniorProjectInfo}`, alt: "Mint-Etkinlik-Görseli" },
-    { src: `${MintWeekends}`, alt: "Mint-Etkinlik-Görseli" },
+    { src: `${BreakfastBanner}`, alt: "Mint-Etkinlik-Görseli" },
+    { src: `${Programming101Banner}`, alt: "Mint-Etkinlik-Görseli" },
   ],
+
+  specialEvent: {
+    title: "ÇALIŞMA GRUPLARI",
+    text: "Frontend, Backend, Mobil, UX/UI Tasarımı, Proje Yönetimi ve Yapay Zeka Çalışma Grupları'mıza katılarak bu alanlarda kendini geliştirebilirsin.",
+    banner: { src: `${MintWeekends}`, alt: "Mint-Etkinlik-Görseli" },
+  },
 
   members: {
     members: [
@@ -129,7 +146,7 @@ export const homeContent = {
         href: "https://www.linkedin.com/in/yusuf-yilmaz0/",
       },
       {
-        name: "Ergin Can Muaf - Eğitim Birimi Koordinatörü",
+        name: "Ergin Can Mutaf - Eğitim Birimi Koordinatörü",
         href: "https://www.linkedin.com/mwlite/in/ergincan-mutaf-69384a220",
       },
       {
@@ -157,8 +174,8 @@ export const homeContent = {
 
   membersImages: [
     { src: `${MintPhoto1}`, alt: "Mint-Üyeler" },
-    { src: `${MintPhoto1}`, alt: "Mint-Üyeler" },
-    { src: `${MintPhoto1}`, alt: "Mint-Üyeler" },
+    { src: `${MintCommunityPhoto3}`, alt: "Mint-Üyeler" },
+    { src: `${MintCommunityPhoto4}`, alt: "Mint-Üyeler" },
   ],
 
   links: {
@@ -1046,22 +1063,33 @@ export const auroraContent = {
 
 export const eventsData = [
   {
+    name: "Mint Meet",
+    date: "11 Ekim 2022",
+    location: "Kulüpler Vadisi",
+    by: "Mint",
+    type: "buluşma",
+    situation: "Geçmiş Etkinlik",
+  },
+  {
     name: "Mint Tanışma Kahvaltısı",
     date: "16 Ekim 2022",
     location: "Göktürk Göleti - Esenbahçe",
     by: "Mint",
     type: "buluşma",
+    situation: "Başvur",
+    link: "https://forms.gle/Cimk9HeEZXmZbtAr9",
   },
   {
-    name: "Mint Weekends",
-    date: "Her Hafta Sonu",
-    location: "Kulüpler Vadisi",
+    name: "Yazılım 101",
+    date: "22 Ekim 2022",
+    location: "Ytü Teknopark",
     by: "Mint",
-    type: "eğitim",
+    type: "zirve",
+    situation: "Başvurular Yakinda",
   },
   {
     name: "Yıldız Yazılım Zirvesi",
-    date: "6-7-8 Aralık 2022",
+    date: "5-6 Aralık 2022",
     location: "Ytü Davutpaşa Kampüsü Tarihi Hamam",
     by: "Mint",
     type: "zirve",
@@ -1096,3 +1124,19 @@ export const eventsData = [
     type: "zirve",
   },
 ];
+
+export const studyGroupContent = {
+  bundle: {
+    background: {
+      src: `${BundleBackground}`,
+      alt: "Ytu-Mint-Arkaplan",
+    },
+    logo: {
+      src: `${MintGreenLogo}`,
+      alt: "Ytu-Mint-Logo",
+    },
+    title: "MİNT ÇALIŞMA GRUPLARI",
+  },
+
+  sponsorships: [],
+};

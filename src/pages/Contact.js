@@ -40,7 +40,7 @@ const ContactLogoContainer = styled.div`
 const Contact = () => {
   return (
     <>
-      <Navbar />
+      <Navbar type="black" />
       <ContactContainer>
         <ContactHeader>Bize Ulaşın</ContactHeader>
         <ReachUs

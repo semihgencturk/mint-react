@@ -45,7 +45,7 @@ const TeamsBackgroundContainer = styled.div`
 const Teams = () => {
   return (
     <>
-      <Navbar />
+      <Navbar type="white" />
       <TeamsContainer>
         <TeamsBackgroundContainer
           src={TeamsBackground}

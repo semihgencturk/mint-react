@@ -12,7 +12,7 @@ import UpDivider from "../ui/UpDivider";
 const Aurora = () => {
   return (
     <>
-      <Navbar />
+      <Navbar type="black" />
 
       <DetailBundle
         background={auroraContent.bundle.background}
@@ -34,8 +34,7 @@ const Aurora = () => {
       <Upcoming
         title="YARIŞMALAR"
         achievements={auroraContent.achievements.achievements}
-        image1={auroraContent.achievementsImages[0]}
-        image2={auroraContent.achievementsImages[0]}
+        images={auroraContent.achievementsImages}
       />
 
       <Sponsorships sponsorships={auroraContent.sponsorships} />

@@ -12,7 +12,7 @@ import { cyberContent } from "../contents/Contents";
 const Ai = () => {
   return (
     <>
-      <Navbar />
+      <Navbar type="black" />
 
       <DetailBundle
         background={cyberContent.bundle.background}

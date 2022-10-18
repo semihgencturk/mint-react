@@ -12,6 +12,7 @@ import Teams from "./pages/Teams";
 import Aurora from "./pages/Aurora";
 import Astrid from "./pages/Astrid";
 import Partners from "./pages/Partners";
+import StudyGroups from "./pages/StudyGroups";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/Takimlar" element={<Teams />} />
         <Route path="/Takimlar/Aurora-UAV" element={<Aurora />} />
         <Route path="/Takimlar/Astrid-Otonom" element={<Astrid />} />
+        <Route path="/Calisma-Gruplari" element={<StudyGroups />} />
       </Routes>
     </BrowserRouter>
   );

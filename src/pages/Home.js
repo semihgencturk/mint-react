@@ -8,6 +8,7 @@ import Sponsorships from "../components/Sponsorships";
 import ReachUs from "../components/ReachUs";
 import Members from "../components/Members";
 import { homeContent } from "../contents/Contents";
+import SpecialEvents from "../components/SpecialEvents";
 
 // const InternalLinkButtonContainer = styled.div`
 //   display: flex;
@@ -25,7 +26,7 @@ const Home = () => {
     myRef.current.scrollIntoView({ behavior: "smooth" });
   return (
     <>
-      <Navbar />
+      <Navbar type="black" />
       <div onClick={executeScroll}>
         <HomeBundle
           background={homeContent.bundle.background}
@@ -46,8 +47,7 @@ const Home = () => {
       <Upcoming
         title="YAKLAŞAN ETKİNLİKLER"
         achievements={homeContent.upcoming.upcoming}
-        image1={homeContent.upcomingImages[0]}
-        image2={homeContent.upcomingImages[1]}
+        images={homeContent.upcomingImages}
       />
 
       {/* <InternalLinkButtonContainer backgroundColor="#aacfd0" position="center">
@@ -57,6 +57,11 @@ const Home = () => {
           fontSize={25}
         />
       </InternalLinkButtonContainer> */}
+      <SpecialEvents
+        title={homeContent.specialEvent.title}
+        text={homeContent.specialEvent.text}
+        banner={homeContent.specialEvent.banner}
+      />
 
       <Sponsorships sponsorships={homeContent.sponsorships} />
 
