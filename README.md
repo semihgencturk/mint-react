@@ -1,7 +1,7 @@
 # Mint Official Website
 
 -  I developed this website for a student community in [Yildiz Technical University](https://yildiz.edu.tr/en) 
-- You can reach the website via [this link](https://ytumint.netlify.app/) and 
+- You can reach the website via [this link](https://ytumint.netlify.app/)
 
 ## About The Project
 
